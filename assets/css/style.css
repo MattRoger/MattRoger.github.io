@@ -199,6 +199,8 @@ footer {
 }
 .portfolio-description:hover{
     opacity:1;
+    transition: .5s;
+    transition-timing-function: ease-in;
 }
 h4{
     margin-bottom: .25em;
