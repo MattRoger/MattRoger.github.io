@@ -39,9 +39,7 @@ a {
 nav {
     font-family: 'Crimson Text', serif;
     margin-bottom: .5em;
-    margin-top: .5em;
-    /* display: inline;
-    float:right; */
+    margin-top: .5em;  
 }
 
 nav a {
