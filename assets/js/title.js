@@ -1,16 +1,5 @@
-// window.addEventListener('load', (event) => {
-//     console.log('page is fully loaded');
-//   });
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
 
-
-typeWriter();
-var i = 0;
-var txt = 'Matt Roger';
-
-function typeWriter() {
-  if (i < txt.length) {
-    $("#name").text += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+  $(".opening").delay(1000).text("To seek something is to believe in its possibility.")
+});
