@@ -24,7 +24,7 @@ body {
 .logo {
   position: fixed;
   top: 25%; 
-  left:35%;
+  left:50%;
 }
 .enterSite a{
  color: #feda4a;
@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  top:1800px;
+  top:100px;
   height: 800px;
   color: #feda4a;
   font-family: 'Pathway Gothic One', sans-serif;
