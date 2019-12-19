@@ -21,13 +21,7 @@ window.addEventListener('load', (event) => {
       $(".crawl").append(p1, p2, p3)    
       },1000
    )
-   setTimeout(
-     function enterButton(){
-      const enterBtn=$("<a>").text("Enter Site")
-      enterBtn.attr("href","about.html")
-      $(".enterSite").append(enterBtn)
-     }
-   ), 10000    
+   
   });
   
   function openMessage (){

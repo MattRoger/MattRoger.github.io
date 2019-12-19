@@ -18,18 +18,34 @@ body {
 }
 
 .logo img {
-  width: 850px;
+  width: 950px;
+  display: Block;
+  margin: auto;
+  margin-bottom: 15%;
+  
 }
 
-.logo {
-  position: fixed;
-  top: 25%; 
-  left:50%;
+.enterSite{ 
+  margin-top: 200px;
+  margin-left: 4em;
+  text-align: left;
+
 }
 .enterSite a{
+ background-image: url("../img/rebel_blue.png");
+ background-size: 100%;
+ background-repeat: no-repeat;
  color: #feda4a;
  font-family: 'Pathway Gothic One', sans-serif;
- position: fixed;
+ font-size:2em;
+ font-weight: 600;
+ padding-top:4.5em;
+ padding-bottom: 3em;
+ padding-left:1em;
+ padding-right: 1em;
+}
+.enterSite a:hover{
+  background-image: url("../img/rebel_orange.png");
 }
 
 .scale-out-center {
