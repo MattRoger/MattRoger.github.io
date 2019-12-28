@@ -35,7 +35,24 @@ a {
 .container {
     text-align: center
 }
-
+.footer-container{
+    text-align: center;
+    padding:.75em;
+    font-size: 1.25em;
+}
+.footer-container a{
+    display: inline-block;
+    padding-left:.75em;
+}
+.footer-container a:visited {
+    color:#201E24
+}
+.footer-container a:hover{
+    color:#D1C6AD
+}
+.footer-container p{
+    display: inline-block;
+}
 nav {
     font-family: 'Crimson Text', serif;
     margin-bottom: .5em;
@@ -78,19 +95,28 @@ h3 {
 }
 
 .profile-image {
+    display: block;
     margin: 0 auto;
     padding-top: 1em;
-    width: 35%;
+    width: 300px;
 }
 
 .about-text {
-    padding-top: 1em;
-    font-size: 1rem;
-    line-height: 1.25em;
+    padding-top: 1.25em;
+    font-size: 1.25em;
+    line-height: 1.5em;
     text-indent: 1em;
     color: #D1C6AD
 }
-
+.about-text a{
+    color:#D1C6AD
+}
+.about-text a:hover{
+    color:#007CB2
+}
+.about-text a:visited{
+    color:#D1C6AD
+}
 .main-section {
     background: #59656F;
     border: 2px solid #D1C6AD;
@@ -99,10 +125,9 @@ h3 {
 }
 
 .about {
-    display: flex;
-    flex-direction: column-reverse;
     margin: 0 auto;
 }
+
 
 input[type=submit] {
     width: 45%;
@@ -157,6 +182,7 @@ footer {
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    padding-bottom:100px;
 }
 
 .portfolio-item {

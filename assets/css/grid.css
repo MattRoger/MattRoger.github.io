@@ -1,2 +1,15 @@
-.portfolio{
+@media screen and (min-width:760px) {
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+.about img{
+    grid-column-start: 0;
+    grid-column-end: 1;
+}
+.about p{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 }
