@@ -1,10 +1,36 @@
-.photo-history {
+.mailchimp {
     display: block;
 }
-.chimp-img{
-    width:350px;
+
+.chimp-img {
+    width: 350px;
 }
-.chimp-item{    
+
+.chimp-item {
     margin: auto;
     width: 350px;
+}
+.chimp-title{
+    border: none;
+}
+@media screen and (min-width:760px) {
+    .photo-history, .howTo, .sales {
+        display: flex;
+        margin-bottom: 1em;
+        justify-content: center;
+    }
+    .chimp-img {
+        max-width: 100%;
+        
+    }
+    .chimp-item{
+        margin:.5em;
+    }
+    .chimp-item h3{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        height: 50px;
+        margin-bottom:.25em;
+
+    }
 }
