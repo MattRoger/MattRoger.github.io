@@ -8,7 +8,7 @@ window.addEventListener('load', (event) => {
       $(".logo").append(logo)     
       console.log("out")  
     }
-    ,4500
+    ,3000
     )
    setTimeout(
      function crawl(){     
@@ -19,7 +19,7 @@ window.addEventListener('load', (event) => {
        const p2=$("<p>").text("Trained in the art of Full-stack development and strong with the creative side of the force, this rebel coder is looking for a new company to grow with and fight the galactic empire of mediocre web design")
        const p3=$("<p>").text(" Pursued by the Empire’s sinister agents, Matt races home aboard his starship, custodian of the plans that can save his people and restore creativity to the galaxy…")
       $(".crawl").append(p1, p2, p3)    
-      },1000
+      },7500
    )
    
   });
