@@ -34,29 +34,29 @@ body {
   
 }
 
-.enterSite{ 
-  margin-top: 200px;
-  margin-left: 4em;
-  text-align: left;
+/* .fill{ 
   position: absolute;
+  top:20%;
+  left:10%
 
-}
-.enterSite a{
- background-image: url("../img/rebel_blue.png");
+} */
+ a{
+ /* background-image: url("../img/rebel_blue.png");
  background-size: 100%;
- background-repeat: no-repeat;
+ background-repeat: no-repeat; */
  color: #feda4a;
  font-family: 'Pathway Gothic One', sans-serif;
  font-size:2em;
  font-weight: 600;
- padding-top:4.5em;
+ margin-top: 100px;
+ padding-top:2.5em;
  padding-bottom: 3em;
  padding-left:1em;
  padding-right: 1em;
 }
-.enterSite a:hover{
+/* a:hover{
   background-image: url("../img/rebel_orange.png");
-}
+} */
 
 .scale-out-center {
   -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 5.5s both;
