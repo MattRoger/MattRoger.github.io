@@ -73,3 +73,9 @@
 .aboutHover:hover {
     opacity: 1;
 }
+
+.aboutSwitch2,
+.aboutSwitch3
+{
+    display:none;
+}

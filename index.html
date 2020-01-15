@@ -17,6 +17,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e85b486770.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 </head>
 
 <body>
@@ -35,44 +36,51 @@
     <section id="about">
         <div class="aboutWrapper">
             <div class="wrapper aboutImgWrapper">
-                <img src="assets/img/elk.jpg" class="aboutImg aboutHover">
-                <div class="quote aboutHover">
-                    <p>To the attentive eye, each moment of the year has its own beauty,</p>
-                    <p>and in the same fields, it beholds, every hour,</p>
-                    <p> a picture which was never seen before,</p>
-                    <p>and which shall never be seen again</p> 
-                </div> 
-                    <nav class="aboutNav">
+                <div class="aboutSwitch aboutHover">
+                    <div class="quote">
+                        <p>I went to the woods because</p>
+                        <p>I wished to live deliberately,</p>
+                        <p>to front only the essential facts of life</p>
+                        <p>and which shall never be seen again,</p>
+                        <p> and see if I could not learn what it had to teach,</p>
+                        <p> and not, when I came to die, </p>
+                        <p>discover that I had not lived</p>
+                    </div>
+                    <img src="assets/img/elk.jpg" class="aboutImg aboutHover">
+                </div>
+                <div class="aboutSwitch2 aboutHover">
+                    <div class="quote">
+                        <p>The fox knows many things</p>                     
+                        <p> but a hedgehog one important thing</p>
+                        <p><i>Archilochus</i></p>
+                    </div>
+                    <img src="assets/img/fox2.jpg" class="aboutImg aboutHover">
+                </div>
+                <div class="aboutSwitch3 aboutHover">
+                    <div class="quote">
+                        <p>To the attentive eye, each moment of the year has its own beauty,</p>
+                        <p>and in the same fields, it beholds, every hour,</p>
+                        <p> a picture which was never seen before,</p>
+                        <p>and which shall never be seen again</p>
+                        <p>Ralph Waldo Emerson</p>
+                    </div>
+                    <img src="assets/img/bison.jpg" class="aboutImg aboutHover">
+                </div>
+                <nav class="aboutNav">
                     <a href="#about" class="btnLeft aboutNavBtn">About</a>
                     <a href="#portfolio" class="aboutNavBtn">Portfolio</a>
                     <a href="#contact" class="btnRight aboutNavBtn">Contact</a>
-                    </nav>
-             </div>
-                <div class="aboutText">
-                   <div class="aboutTextNav">
-                       <button id="aboutMeBtn">About Me</button>
-                       <button>Tech Skills</button>
-                       <button>Social Skills</button>
-                   </div>
-                   <div id="mainAbout">
-                        <h3>A little about me</h3>
-                        <p>Here is where I talk about myself</p>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                   </div>
-                   <div id="techSkillsAbout">
-                        <h3>My Skills</h3>
-                        <p>Here is where I talk about my tech skills</p>
-                        <i class="far fa-arrow-alt-circle-left"></i>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                   </div>
-                   <div id="socialSkillsAbout">
-                        <h3>A little about me</h3>
-                        <p>Here is where I talk about myself</p>
-                        <i class="far fa-arrow-alt-circle-left"></i>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                   </div>
-                </div>
+                </nav>
             </div>
+            <div class="aboutText">
+                <div class="aboutTextNav">
+                    <button id="aboutMeBtn">About Me</button>
+                    <button id="techSkills">Tech Skills</button>
+                    <button id="socialSkills">Social Skills</button>
+                </div>
+                <div class="aboutTextBox"></div>
+            </div>
+        </div>
 
     </section>
     <section id="portfolio">
@@ -116,6 +124,9 @@
         </div>
     </footer>
 
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>  
+    
 </body>
-
 </html>
