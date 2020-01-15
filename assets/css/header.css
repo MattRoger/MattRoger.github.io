@@ -1,0 +1,39 @@
+.intro {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.introHead {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+}
+
+.title {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size:4em;
+}
+.introNav{    
+    position: absolute;
+    left:50px;
+    top:325px;
+}
+.introNav a{
+    display: block;
+    font-size:2.5em;
+    padding:.5em;
+
+}

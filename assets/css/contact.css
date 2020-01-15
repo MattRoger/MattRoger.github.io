@@ -1,0 +1,19 @@
+.contactImg{
+    width:100%;
+}
+.contactInfo{
+    position: absolute;
+    top:2em;
+    left:1em;
+}
+.contactInfo i{
+    display: block;
+    margin-top:1em;
+    font-size: 2em;
+  
+}
+.messageBtn{
+    position: absolute;
+    bottom:12em;
+    right:15em;
+}

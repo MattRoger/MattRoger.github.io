@@ -1,0 +1,75 @@
+.aboutImg {
+    width: 100%;
+    opacity: .5;
+}
+
+.aboutImg img {
+    display: inline;
+}
+
+.aboutWrapper {
+    background-color: rgb(63, 63, 63);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.quote {
+    position: absolute;
+    top: 1em;
+    /* left:25%; */
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.aboutImgWrapper {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.aboutNav {
+    position: absolute;
+    bottom: 1.5em;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+    width:100%;
+}
+
+.aboutNavBtn {
+    background-color: #d39923;
+    padding:.5em 1em;
+    border: 2px solid #404d2a;
+    
+}
+.aboutNavBtn{
+    color:#404d2a;
+}
+
+.btnRight {   
+ 
+    -moz-border-radius-topright: 85px;
+    -webkit-border-top-right-radius: 85px;
+    border-top-right-radius: 85px;
+}
+
+.btnLeft {
+    -moz-border-radius-topleft: 90px;
+    -webkit-border-top-left-radius: 90px;
+    border-top-left-radius: 90px;
+}
+
+.aboutText {
+    background-color: #eae5d4;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 100%;
+}
+
+.aboutHover:hover {
+    opacity: 1;
+}

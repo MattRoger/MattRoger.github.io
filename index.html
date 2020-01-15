@@ -7,32 +7,114 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matt Roger Web Developer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/intro.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="assets/js/title.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:900|Sorts+Mill+Goudy&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e85b486770.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
-    <div class="intro-wrapper">
-        <a href="about.html">
-     
-            Enter Site
-       
-    </a>
-        <div class="opening">
+    <Header>
+        <div class="introHead">
+            <h1 class="name text-effect">Matt Roger</h1>
+            <h2 class="title text-effect">Web Developer | Photographer | Artist</h2>
+            <img src="assets/img/intro.jpg" alt="bison" class="intro">
+            <nav class="introNav">
+                <a href="#about" class="text-effect">About</a>
+                <a href="#portfolio" class="text-effect">Portfolio</a>
+                <a href="#contact" class="text-effect">Contact</a>
+            </nav>
         </div>
-        <div class="logo scale-out-center"></div>
-        <section class="star-wars">
-            <div class="crawl">
-                <div class="title"></div>
+    </Header>
+    <section id="about">
+        <div class="aboutWrapper">
+            <div class="wrapper aboutImgWrapper">
+                <img src="assets/img/elk.jpg" class="aboutImg aboutHover">
+                <div class="quote aboutHover">
+                    <p>To the attentive eye, each moment of the year has its own beauty,</p>
+                    <p>and in the same fields, it beholds, every hour,</p>
+                    <p> a picture which was never seen before,</p>
+                    <p>and which shall never be seen again</p> 
+                </div> 
+                    <nav class="aboutNav">
+                    <a href="#about" class="btnLeft aboutNavBtn">About</a>
+                    <a href="#portfolio" class="aboutNavBtn">Portfolio</a>
+                    <a href="#contact" class="btnRight aboutNavBtn">Contact</a>
+                    </nav>
+             </div>
+                <div class="aboutText">
+                   <div class="aboutTextNav">
+                       <button id="aboutMeBtn">About Me</button>
+                       <button>Tech Skills</button>
+                       <button>Social Skills</button>
+                   </div>
+                   <div id="mainAbout">
+                        <h3>A little about me</h3>
+                        <p>Here is where I talk about myself</p>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                   </div>
+                   <div id="techSkillsAbout">
+                        <h3>My Skills</h3>
+                        <p>Here is where I talk about my tech skills</p>
+                        <i class="far fa-arrow-alt-circle-left"></i>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                   </div>
+                   <div id="socialSkillsAbout">
+                        <h3>A little about me</h3>
+                        <p>Here is where I talk about myself</p>
+                        <i class="far fa-arrow-alt-circle-left"></i>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                   </div>
+                </div>
             </div>
-        </section>
-        <audio id="intro-music">
-            <source src="assets/audio/star_wars_theme.mp3" type="audio/mpeg">
-    </audio>
-    </div>
+
+    </section>
+    <section id="portfolio">
+        <div class="wrapper">
+            <img src="assets/img/portfolio.jpg" class="portfolioHeadImg">
+            <div class="buttonGroup">
+                <button>Group Projects</button>
+                <button>Front End Design</button>
+                <button>Games</button>
+                <button>MailChimp</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <img src="assets/img/contact.jpg" class="contactImg">
+            <div class="contactInfo">
+                <i class="far fa-envelope">MattRoger.WebDev@gmail.com</i>
+
+                <i class="fab fa-linkedin">LinkedIn</i>
+
+                <i class="fab fa-github">GitHub</i>
+
+
+            </div>
+            <div>
+                <button class="messageBtn">
+                    <i class="far fa-comment-alt">
+                        Send Me A Message
+                    </i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img src="assets/img/footer.jpg">
+        </div>
+        <div>
+            <img src="assets/img/fox.jpg">
+        </div>
+    </footer>
 
 </body>
 
