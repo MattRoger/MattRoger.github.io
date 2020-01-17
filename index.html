@@ -13,8 +13,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Heebo:900|Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Heebo:900|Pirata+One&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
     <script src="https://kit.fontawesome.com/e85b486770.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
@@ -50,7 +52,7 @@
                 </div>
                 <div class="aboutSwitch2 aboutHover">
                     <div class="quote">
-                        <p>The fox knows many things</p>                     
+                        <p>The fox knows many things</p>
                         <p> but a hedgehog one important thing</p>
                         <p><i>Archilochus</i></p>
                     </div>
@@ -85,48 +87,86 @@
     </section>
     <section id="portfolio">
         <div class="wrapper">
+            <h2 class="portfolioHeadText text-effect">Portfolio</h2>
             <img src="assets/img/portfolio.jpg" class="portfolioHeadImg">
             <div class="buttonGroup">
-                <button>Group Projects</button>
-                <button>Front End Design</button>
-                <button>Games</button>
-                <button>MailChimp</button>
+                <button id="portBtn1"><a href="#mainContent">Group Projects</a></button>
+                <button id="portBtn2"><a href="#mainContent">Solo Projects</a></button>
+                <button id="portBtn3"><a href="#mainContent">Success With MailChimp</a></button>
+
             </div>
+        </div>
+        <div class="portGroup" id="mainContent">
         </div>
     </section>
     <section id="contact">
         <div class="wrapper">
             <img src="assets/img/contact.jpg" class="contactImg">
             <div class="contactInfo">
-                <i class="far fa-envelope">MattRoger.WebDev@gmail.com</i>
-
-                <i class="fab fa-linkedin">LinkedIn</i>
-
-                <i class="fab fa-github">GitHub</i>
+                <button class="btn hoverColor" id="emailBtn" data-clipboard-text="mattroger.webdev@gmail.com">
+                    <i class="far fa-envelope"></i>
+                    Email Me!
+                </button>
+                <a href="https://www.linkedin.com/in/matt-roger/">
+                    <button class="hoverColor">
+                        <i class="fab fa-linkedin">
+                        </i>
+                        LinkedIn
+                    </button>
+                </a>
+                <a href="https://github.com/MattRoger">
+                    <button class="hoverColor">
+                        <i class="fab fa-github">
+                        </i>
+                        GitHub
+                    </button>
+                </a>
 
 
             </div>
             <div>
-                <button class="messageBtn">
-                    <i class="far fa-comment-alt">
-                        Send Me A Message
-                    </i>
+                <button class="messageBtn hoverColor">
+                    <i class="far fa-comment-alt"> </i>
+                    Send Me A Message
                 </button>
+            </div>
+            <div class="contactFormWrapper">
+                <form action="https://formspree.io/xoqjqqze" method="POST">
+                    <div class="inputWrapper">
+                        <div class="inputGroup">
+                            <label for="email">Name</label>
+                            <input type="text" id="email" name="name" placeholder="name">
+
+                        </div>
+                        <div class="inputGroup">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="_replyto" placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <textarea id="message" name="subject" placeholder="Your message here..."></textarea>
+                    <input class="submit contactBtnBar btnColor" type="submit" value="submit">
+                </form>
+                <div class="contactBtnBar">
+                    <button class="closeContact btnColor">Maybe later...?</button> </div>
             </div>
         </div>
     </section>
     <footer>
         <div>
-            <img src="assets/img/footer.jpg">
-        </div>
-        <div>
-            <img src="assets/img/fox.jpg">
+            <img src="assets/img/footer.jpg">            
+                <p class="footQuoteL1 text-effect">The clearest way into the Universe is through a forest wilderness.</p>
+                <p class="footQuoteL2 text-effect">John Muir</p>           
         </div>
     </footer>
 
-  
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>  
-    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/groupProjects.js"></script>
+    <script src="assets/js/solo.js"></script>
+
 </body>
+
 </html>

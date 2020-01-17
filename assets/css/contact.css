@@ -1,19 +1,124 @@
-.contactImg{
-    width:100%;
+.contactImg {
+    width: 100%;
 }
-.contactInfo{
+
+.contactInfo {
     position: absolute;
-    top:2em;
-    left:1em;
+    top: 2em;
+    left: 2em;
+    font-family: 'Pirata One', cursive;
+    font-size:2em;
 }
-.contactInfo i{
+
+.contactInfo button {
+    background: none;
+    border: none;
     display: block;
-    margin-top:1em;
+    margin-top: 1em;
     font-size: 2em;
-  
+    font-family: 'Pirata One', cursive;
 }
-.messageBtn{
+.contactInfo button:hover{
+    color:#E1A811;
+}
+.contactInfo a {
+    color: black;
+    text-decoration: none;
+}
+.contactInfo a:hover{
+    color:#E1A811
+}
+.contactInfo a:visited {
+    color: black;
+}
+
+.messageBtn {
     position: absolute;
-    bottom:12em;
-    right:15em;
+    bottom: 7em;
+    right: 3em;
+    font-family: 'Pirata One', cursive;
+    font-size:2.5em;
+    background: #F8F8F8;
+    border-radius: 25%;
+    padding:.5em 1em;
+    -webkit-box-shadow: 36px 34px 45px 29px rgba(0,0,0,0.48); 
+box-shadow: 36px 34px 45px 29px rgba(0,0,0,0.48);
 }
+.hoverColor:hover{
+    color:#E1A811;
+}
+.contactFormWrapper {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/contactback.jpg");
+    background-size: cover;
+}
+
+.inputWrapper {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.inputGroup {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2.5em;
+}
+
+.contactFormWrapper textarea {
+    margin: 1em auto;
+    display: block;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.contactFormWrapper textarea {
+    height: 300px;
+    width: 600px;
+    border:3px solid #E1A811;
+}
+
+.contactBtnBar {
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-family: 'Pirata One', cursive;
+    
+}
+
+.contactBtnBar {    
+    margin-top: 1em;
+}
+label{
+    font-family: 'Pirata One', cursive;
+}
+.inputGroup::first-letter{
+    color:#E1A811;
+    font-size:1.5em;
+}
+.btnColor{
+    font-family: 'Pirata One', cursive;
+    font-size:1.5em;
+    padding:.5em 1em;
+    border-color:#E1A811;    
+}
+@media only screen and (max-width: 1698px) {
+    .messageBtn {
+        font-size: 2em;
+    }
+  }
+  @media only screen and (max-width: 1460px){
+    .contactInfo button{
+        font-size: 1.5em;;
+    }
+  }
+  @media only screen and (max-width: 1225px){
+    .messageBtn{
+        font-size: 1.5em;
+    }
+  }
