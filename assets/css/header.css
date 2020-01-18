@@ -1,8 +1,12 @@
+header{
+    margin-bottom:-5px;
+}
 .intro {
     min-height: 100%;
     width: 100%;
     height: auto;
     overflow: hidden;
+    border-bottom:8px solid black;
 }
 
 .introHead {
@@ -78,5 +82,20 @@
      .title{
         font-size: 1.75em;
     }
-    
-  }
+}
+@media only screen and (max-width: 749px){
+    .introHead img{
+        width:100%;
+    }
+    .name{
+        top: 50px;       
+        font-size: 3.5em;
+    }
+    .title{
+        font-size: 1.25em;
+        top: 150px;
+    }
+    .introNav{
+        top:250px;
+    }
+}

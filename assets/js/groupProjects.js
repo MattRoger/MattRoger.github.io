@@ -79,6 +79,7 @@ function loadGroupProjects () {
         const aboutProject = $("<p>");
         aboutProject.text(groupProjects[i].about);
         const gitHubLink = $("<a>").text("See the Code");
+        const portMobile=$("<div>").addClass("portMobile")
         aboutProject.prepend(titleInner)
         aboutProject.append(gitHubLink);
         aboutProject.addClass("aboutProject")
@@ -86,7 +87,9 @@ function loadGroupProjects () {
         //    going to need a section for the link
         const previewImg = $("<img>")
         previewImg.attr("src", groupProjects[i].image)
-        project.append(title, aboutProject, previewImg)
+        portMobile.append(title, previewImg)
+        
+        project.append(title, portMobile)
         projectWrapper.append(project);
     }
     $(".portGroup").append(heading, projectWrapper, footer)

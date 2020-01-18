@@ -5,9 +5,17 @@ html {
     scroll-behavior: smooth;
     
   }
+ 
+  footer{
+    margin-top: -5px;
+  }
   p{
     font-family: 'Gentium Book Basic', serif;
   }
+
+.mobile{
+  display: none;
+}
 .text-effect{    
     text-transform: uppercase;
     /* font-weight: bold; */
@@ -31,4 +39,16 @@ html {
 
 .wrapper{
     position: relative;
+}
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 749px){
+  .mobile{
+    display: block;
+  }
+  .full{
+    display: none;
+  }
 }

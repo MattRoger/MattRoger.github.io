@@ -1,14 +1,16 @@
 .portfolioHeadImg {
     width: 100%;
 }
-.portfolioHeadText{
+
+.portfolioHeadText {
     position: absolute;
     text-align: center;
-    top:.5em;
-    font-size:6em;
+    top: .5em;
+    font-size: 6em;
     width: 100%;
-    letter-spacing:.75em;
+    letter-spacing: .75em;
 }
+
 .buttonGroup {
     position: absolute;
     bottom: 0;
@@ -116,7 +118,7 @@
     /* display: none; */
 }
 
-.projectTitle{
+.projectTitle {
     text-align: center;
     color: #F0C336;
     font: 1.5em;
@@ -126,8 +128,8 @@
     bottom: 1em;
     z-index: 100;
     font-family: 'Pirata One', cursive;
-    font-size:2.25em;
-    padding-top:.5em;
+    font-size: 2.25em;
+    padding-top: .5em;
     padding-bottom: .5em;
 }
 
@@ -136,9 +138,8 @@
     margin: 2em;
     width: 40%;
     color: #F0C336;
-    border:.25em solid #F0C336;
+    border: .25em solid #F0C336;
 }
-
 
 .aboutProject {
     position: absolute;
@@ -149,86 +150,214 @@
     height: 100%;
     opacity: 0;
     z-index: 200;
-    padding-left:1.5em;
-    padding-right:1.5em;
-    padding-top:1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
     box-sizing: border-box;
-    font-size:1.5em;
+    font-size: 1.5em;
 }
-
 
 .aboutProject:hover {
     opacity: 1;
     transition: .5s;
     transition-timing-function: ease-in;
 }
-.innerTitle{
-   font-family: 'Pirata One', cursive;
-   font-size:3em; 
-   padding-bottom: 1em;  
+
+.innerTitle {
+    font-family: 'Pirata One', cursive;
+    font-size: 3em;
+    padding-bottom: 1em;
 }
-.linkWrapper{
+
+.linkWrapper {
     margin-top: 1.5em;
     width: 100%;
-   
 }
-.portLinks{
+
+.portLinks {
     display: inline-block;
-    color:black;
+    color: black;
     background: #F0C336;
-    padding:.5em 1em;    
-    font-family: 'Pirata One', cursive;   
-    border:2px solid black;
-    width:30%;
+    padding: .5em 1em;
+    font-family: 'Pirata One', cursive;
+    border: 2px solid black;
+    width: 30%;
     margin-left: .5em;
     text-align: center;
     position: absolute;
-    bottom:1em;
+    bottom: 1em;
 }
-.portLinks:first-of-type{
-    border-radius: 40px 0px 0px 0px;   
-    left:1em
-  
+
+.portLinks:first-of-type {
+    border-radius: 40px 0px 0px 0px;
+    left: 1em
 }
-.portLinks:last-child{   
+
+.portLinks:last-child {
     border-radius: 0px 40px 0px 0px;
-    right:1em;
+    right: 1em;
 }
 
-
+.portMobile {
+    display: none;
+}
 
 @media only screen and (max-width: 1698px) {
-    .innerTitle{
-        font-size:2em; 
-        padding-bottom:.5em;  
-     }
-     .aboutProject{
-        font-size:1.25em;
-        line-height: 1.5em;
-     }
-  }
-  @media only screen and (max-width: 1340px){
-    .aboutProject{        
-        line-height: 1em;
-     }
-  }
-  @media only screen and (max-width: 1225px){
-    .portfolioHeadText{
-        font-size: 4em;
-        letter-spacing:.25em;
+    .innerTitle {
+        font-size: 2em;
+        padding-bottom: .5em;
     }
-    .buttonGroup button{
+    .aboutProject {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    .aboutProject {
+        line-height: 1em;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .portfolioHeadText {
+        font-size: 4em;
+        letter-spacing: .25em;
+    }
+    .buttonGroup button {
         font-size: 2em;
     }
-  }
-  @media only screen and (max-width: 1049px){
-    .aboutProject{
+}
+
+@media only screen and (max-width: 1049px) {
+    .aboutProject {
         font-size: 1em;
     }
-    .innerTitle{
-        font-size:1.5em;          
-     }
-     .projectTitle{
-         font-size: 1.5em;
-     }
-  }
+    .innerTitle {
+        font-size: 1.5em;
+    }
+    .projectTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+    .portfolioHeadText {
+        font-size: 3em;
+        letter-spacing: .25em;
+    }
+    .buttonGroup button {
+        font-size: 1.5em;
+    }
+    .portLinks {
+        padding: .25em .75em;
+    }
+    .aboutProject {
+        font-size: .95em;
+        line-height: 1.15em;
+    }
+    .innerTitle {
+        font-size: 1.5em;
+        ;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .portfolioHeadText {
+        font-size: 2em;
+        letter-spacing: .25em;
+        top: 10px;
+    }
+    .buttonGroup button {
+        display: block;
+        border: none;
+        background: none;
+        padding-bottom: .5em;
+        padding-left: .5em;
+        font-size: 1.25em;
+        font-family: 'Pirata One', cursive;
+    }    
+    .buttonGroup {
+        position: absolute;
+        top: 50px;
+        width: auto;
+        background: none;
+        position: absolute;
+        top: 50px;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        border: none;        
+        padding-bottom: .25em;
+        padding-top: .25em;
+    }
+    .buttonGroup a {
+        color: white
+    }
+    .projectWrapper {
+        display: inline;
+    }
+    .project {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        margin: .5em;
+    }
+    .project img {
+        width: auto;
+    }
+    .portMobile {
+        display: initial;
+        overflow: hidden;
+        border-radius: 50%;
+        padding: 1em;
+        opacity: 1;
+        text-align: center;
+    }
+    .project .aboutProject{
+        display:none;
+    }
+    .aboutProject {
+        opacity: 1;
+        position: relative;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-left: 49vw;
+        margin-top: -3em;
+        overflow: hidden;
+        font-size: .85em;
+        border: .25em solid #F0C336;
+    }
+    .innerTitle {
+        font-size: 1em;
+    }
+    .portLinks {
+        display: block;
+        width: 100%;
+        padding: .25em .5em;
+        font-size: .75em;
+        position: relative;
+        margin-bottom: .5em;
+    }
+   
+    .portLinks:first-of-type {
+        position: relative;
+        text-align: left;
+        border-radius: 0;
+        margin-left: 0;
+        width: 100%;
+        padding-right: 2em;
+    }
+    .mainNav a {
+        font-size: 1.5em;
+        padding: .75em;
+        box-shadow: 0;
+    }
+}
+@media only screen and (max-width: 349px){
+    .buttonGroup {
+        font-size: .75em;
+    }
+}

@@ -7,7 +7,7 @@
     top: 2em;
     left: 2em;
     font-family: 'Pirata One', cursive;
-    font-size:2em;
+    font-size: 2em;
 }
 
 .contactInfo button {
@@ -18,16 +18,20 @@
     font-size: 2em;
     font-family: 'Pirata One', cursive;
 }
-.contactInfo button:hover{
-    color:#E1A811;
+
+.contactInfo button:hover {
+    color: #E1A811;
 }
+
 .contactInfo a {
     color: black;
     text-decoration: none;
 }
-.contactInfo a:hover{
-    color:#E1A811
+
+.contactInfo a:hover {
+    color: #E1A811
 }
+
 .contactInfo a:visited {
     color: black;
 }
@@ -37,16 +41,18 @@
     bottom: 7em;
     right: 3em;
     font-family: 'Pirata One', cursive;
-    font-size:2.5em;
+    font-size: 2.5em;
     background: #F8F8F8;
     border-radius: 25%;
-    padding:.5em 1em;
-    -webkit-box-shadow: 36px 34px 45px 29px rgba(0,0,0,0.48); 
-box-shadow: 36px 34px 45px 29px rgba(0,0,0,0.48);
+    padding: .5em 1em;
+    -webkit-box-shadow: 36px 34px 45px 29px rgba(0, 0, 0, 0.48);
+    box-shadow: 36px 34px 45px 29px rgba(0, 0, 0, 0.48);
 }
-.hoverColor:hover{
-    color:#E1A811;
+
+.hoverColor:hover {
+    color: #E1A811;
 }
+
 .contactFormWrapper {
     display: none;
     position: absolute;
@@ -80,7 +86,7 @@ box-shadow: 36px 34px 45px 29px rgba(0,0,0,0.48);
 .contactFormWrapper textarea {
     height: 300px;
     width: 600px;
-    border:3px solid #E1A811;
+    border: 3px solid #E1A811;
 }
 
 .contactBtnBar {
@@ -88,37 +94,88 @@ box-shadow: 36px 34px 45px 29px rgba(0,0,0,0.48);
     display: block;
     text-align: center;
     font-family: 'Pirata One', cursive;
-    
 }
 
-.contactBtnBar {    
+.contactBtnBar {
     margin-top: 1em;
 }
-label{
+
+label {
     font-family: 'Pirata One', cursive;
 }
-.inputGroup::first-letter{
-    color:#E1A811;
-    font-size:1.5em;
+
+.inputGroup::first-letter {
+    color: #E1A811;
+    font-size: 1.5em;
 }
-.btnColor{
+
+.btnColor {
     font-family: 'Pirata One', cursive;
-    font-size:1.5em;
-    padding:.5em 1em;
-    border-color:#E1A811;    
+    font-size: 1.5em;
+    padding: .5em 1em;
+    border-color: #E1A811;
 }
+
 @media only screen and (max-width: 1698px) {
     .messageBtn {
         font-size: 2em;
     }
-  }
-  @media only screen and (max-width: 1460px){
-    .contactInfo button{
-        font-size: 1.5em;;
-    }
-  }
-  @media only screen and (max-width: 1225px){
-    .messageBtn{
+}
+
+@media only screen and (max-width: 1460px) {
+    .contactInfo button {
         font-size: 1.5em;
     }
-  }
+}
+
+@media only screen and (max-width: 1225px) {
+    .messageBtn {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+    .messageBtn {
+        font-size: 1.25em;
+        -webkit-box-shadow: 7px 21px 51px -12px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: 7px 21px 51px -12px rgba(0, 0, 0, 0.59);
+        box-shadow: 7px 21px 51px -12px rgba(0, 0, 0, 0.59);
+    }
+    .contactInfo button {
+        font-size: 1em;
+        bottom: 6em;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .contactInfo {
+        top: .5em;
+        left: initial;
+    }
+    .contactInfo button {
+        width: 100%;
+        text-align: center;
+        display: initial;
+    }
+    .messageBtn {
+        -webkit-box-shadow: 0;
+        -moz-box-shadow: 0;
+        box-shadow: 0;
+        bottom: initial;
+        right: initial;
+        top:30%;        
+        width: 100%;
+        border-radius: 0;
+    }
+    .messageBtn button{
+        text-align: center;
+    }
+    .contactFormWrapper textarea{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 349px){
+    .messageBtn{
+        top:35%;
+    }
+}

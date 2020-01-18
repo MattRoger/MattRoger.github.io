@@ -12,6 +12,8 @@
     display: grid;
     grid-template-columns: 50% 50%;
     position: relative;
+    border-bottom:8px solid black;
+
    
 }
 
@@ -29,6 +31,7 @@
 .aboutImgWrapper {
     grid-column-start: 1;
     grid-column-end: 2;
+    border-right: 4px solid black;
 }
 
 .aboutTextNav {
@@ -36,7 +39,9 @@
     background-image: url("../img/banner.png");
     background-size: 90%;
     background-repeat: no-repeat;
-    padding-bottom: 2.9em;
+    background-position: center;
+    padding-top: .5em;
+    padding-bottom: 2.7em;
 }
 
 .aboutTextNav button {
@@ -61,12 +66,15 @@
 }
 
 .aboutNav {
+    margin: 0;
     position: absolute;
-    top: 45%;
-    right: 48%;
+    bottom: 0%;
+    top: 0%;
+    right: 90%;
     font-size: 2em;
     text-align: center;
     width: 100%;
+    display: in;
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #eae5d425;
@@ -232,11 +240,13 @@
         padding-top:0;
     }
     .aboutMeText{
-        height: 40vh;
+        height: 60vh;
     }
   }
   @media only screen and (max-width: 1460px){
-   
+    .aboutMeText{
+        height: 40vh;
+    }
     .aboutHead{
         font-size:2.5em;
     }
@@ -248,7 +258,7 @@
   }
   @media only screen and (max-width: 1225px){
     .aboutMeText{
-        height: 15em;
+        height: 30vh;
     }
     .selfImage {
         width: 200px;     
@@ -274,5 +284,39 @@
     }
     .selfImage {
         width: 175px;     
+    }
+  }
+  @media only screen and (max-width: 949px){
+    .aboutTextNav button{
+        font-size: 1.15em;
+        padding:.5em .25em 1.5em .25em;
+        text-align: center;
+    }
+    .aboutTextNav{
+        padding-bottom: .25em;;
+    }
+    .aboutHead{
+        font-size:2em;
+    }
+    .aboutMeText{
+        font-size: 1.25em;
+        height: 22vh;
+
+    }
+    .selfImage {
+        width: 150px;     
+    }
+  }
+  @media only screen and (max-width: 749px){
+    .aboutWrapper {
+       display: block;
+       height: 100vh;
+       margin-bottom: 0;
+    }
+    .aboutImgM{
+        width:100%
+    }
+    .aboutMeText{
+        height: 60vh;
     }
   }

@@ -64,6 +64,7 @@ $(".groupLink").on("click", function () {
 })
 
 $("#portBtn2").on("click", function () {
+    console.log("click")
     loadSoloProjects();
 })
 $("#soloLink").on("click", function(){
@@ -117,32 +118,50 @@ function loadSoloProjects () {
         const title = $("<a>").attr("href",soloProjects[i].deployed)
 
         title.text(soloProjects[i].name);
-        title.addClass("projectTitle")        
+        title.addClass("projectTitle") 
+
         const titleInner  = $("<p>") 
+        const titleInner2  = $("<p>") 
         titleInner.addClass("innerTitle")
+        titleInner2.addClass("innerTitle")
         titleInner.text(soloProjects[i].name)     
-        const aboutProject = $("<p>");
-        aboutProject.text(soloProjects[i].about);
+        titleInner2.text(soloProjects[i].name)     
+        const aboutProject = $("<p>").text(soloProjects[i].about);
+        const aboutProject2= $("<p>").text(soloProjects[i].about)
+        aboutProject.addClass("aboutProject")
+        aboutProject2.addClass("aboutProject")
+        
 
         const gitHubLink = $("<a>").text("See the Code");
+        const gitHubLink2 = $("<a>").text("See the Code");
         gitHubLink.attr("href",soloProjects[i].github)
+        gitHubLink2.attr("href",soloProjects[i].github)
         gitHubLink.addClass("portLinks");
+        gitHubLink2.addClass("portLinks");
         
         const dLink = $("<a>").text("See it Live");
         dLink.attr("href",soloProjects[i].deployed);
         dLink.addClass("portLinks");
-
         const linkWrapper=$("<div>").addClass("linkWrapper");
+        const linkWrapper2=$("<div>").addClass("linkWrapper");
         linkWrapper.append(gitHubLink, dLink)
+        linkWrapper2.append(gitHubLink)
+        
 
-        aboutProject.addClass("aboutProject")
         aboutProject.prepend(titleInner);
+        aboutProject2.prepend(titleInner2);
         aboutProject.append(linkWrapper);
-       
-        const previewImg = $("<img>")
-        previewImg.attr("src", soloProjects[i].image)
-        project.append(title, aboutProject, previewImg)
-        projectWrapper.append(project);
+        aboutProject2.append(linkWrapper2);
+        
+        const portMobile=$("<div>").addClass("portMobile")
+        
+        const previewImg = $("<img>");
+        previewImg.attr("src", soloProjects[i].image);
+        project.append( aboutProject, title, previewImg);
+        projectWrapper.append(project)
+        portMobile.append(aboutProject2);
+        projectWrapper.append(portMobile);
+        
     }
-    $(".portGroup").append(heading, projectWrapper, footer)
+    $(".portGroup").append(heading, projectWrapper, footer);
 }
