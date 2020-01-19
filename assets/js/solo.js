@@ -1,3 +1,5 @@
+// import {loadGroupProjects} from './groupProjects'
+
 const soloProjects = [{
     name: "Visit South Park",
     about: "A single mobile responsive tourism page for the fictional town of South Park",
@@ -56,49 +58,16 @@ const soloProjects = [{
     image: "assets/img/portfolio/psychicGame.PNG"
 },
 ]
-
-$(".groupLink").on("click", function () {
-    console.log("click")
-    // loadGroupProjects()
-
+$("#portBtn2").on("click", function(){    
+    loadSoloProjects()
 })
 
-$("#portBtn2").on("click", function () {
-    console.log("click")
-    loadSoloProjects();
-})
-$("#soloLink").on("click", function(){
-    console.log("clicked")
-    // loadSoloProjects()
-})
-function loadSoloProjects () {
-    $(".portGroup").empty();
-    const heading = $("<div>");
-    const center =$("<p>")
-    center.text("Solo Projects");
-    center.addClass("portNav")
-    center.addClass("center")
-
-    const leftSide=$("<button>").attr("id","portBtn1")
-    const leftdiv=$("<div>").addClass("leftSide")
-    const left=$("<p>").text("Group Projects");
-    const imgL=$("<img>").attr("src","assets/img/arrowLeft.PNG");    
-    left.addClass("portNav")
-    left.addClass("portSideLeft")
-    leftSide.append(leftdiv,left, imgL)
-    leftSide.addClass("groupLink")
-
-    const rightSide=$("<div>").addClass("rightSide")
-    const right=$("<p>").text("Mail Chimp");
-    const imgR=$("<img>").attr("src","assets/img/arrowRight.PNG");
-    right.addClass("portNav")
-    right.addClass("portSideRight")
-
-    
-    rightSide.append(right, imgR,)
-  
-    heading.append(leftSide, center, rightSide)
-    heading.addClass("portNavBar")
+function loadSoloProjects () {    
+   $(".portGroup").empty();
+   $(".buttonGroup").css("position","sticky");
+   $(".buttonGroup").css("bottom","initial");
+   $(".buttonGroup").css("top","0");
+   $(".buttonGroup").css("font-size",".5em");
 
    const footer=$("<div>").addClass("mainNav");
    const about=$("<a>").attr("href", "#about");
@@ -127,7 +96,7 @@ function loadSoloProjects () {
         titleInner.text(soloProjects[i].name)     
         titleInner2.text(soloProjects[i].name)     
         const aboutProject = $("<p>").text(soloProjects[i].about);
-        const aboutProject2= $("<p>").text(soloProjects[i].about)
+        const aboutProject2= $("<p>").text(soloProjects[i].about);
         aboutProject.addClass("aboutProject")
         aboutProject2.addClass("aboutProject")
         
@@ -145,7 +114,7 @@ function loadSoloProjects () {
         const linkWrapper=$("<div>").addClass("linkWrapper");
         const linkWrapper2=$("<div>").addClass("linkWrapper");
         linkWrapper.append(gitHubLink, dLink)
-        linkWrapper2.append(gitHubLink)
+        linkWrapper2.append(gitHubLink2)
         
 
         aboutProject.prepend(titleInner);
@@ -163,5 +132,5 @@ function loadSoloProjects () {
         projectWrapper.append(portMobile);
         
     }
-    $(".portGroup").append(heading, projectWrapper, footer);
+    $(".portGroup").append(projectWrapper, footer);
 }

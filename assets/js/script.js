@@ -36,7 +36,7 @@ $("#techSkills").on("click", function () {
     aboutMeHead.text("The Skills That Pay The Bills");
     const aboutMeText = $("<div>").addClass("aboutMeText");
     const p1 = $("<p>")
-    p1.text("A University of Denver full-stack coding Bootcamp, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge. ");
+    p1.text("You can never learn to many skills. Here are some of the many tools in my tool box. I am a wizard in with Adobe Photoshop and I use those skills to enhance my front-end designs using CSS and JavaScript. ");
 
     const ul1 = $("<ul>").addClass("skillsList");
     ul1.text("Languages");
@@ -106,23 +106,33 @@ const other2 = ["Photography","Mass Email Marketing", "Social Media Marketing","
     aboutMeText.append(p1, ul1, ul2, ul3, ul4, ul5);
     $(".aboutTextBox").append(aboutMeDiv);
 })
+
+
 $("#socialSkills").on("click", function () {
-    console.log("click");
-    socImg()
     $(".aboutTextBox").empty();
-    console.log("working")
-    const aboutMeDiv = $("<div>");
-    const aboutMeHead = $("<h3>");
-    aboutMeHead.text("a third thing");
-    const aboutMeText = $("<p>");
-    aboutMeText.text(`Good news, everyone! There's a report on TV with some very bad news! You wouldn't. Ask anyway! You seem malnourished. Are you suffering from intestinal parasites? My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards.
-            
-            You'll have all the Slurm you can drink when you're partying with Slurms McKenzie! Why would a robot need to drink? Daddy Bender, we're hungry. Yeah. Give a little credit to our public schools. And why did 'I' have to take a cab?
-         
-            `)
+    socImg();
+    const aboutMeDiv = $("<div>").addClass("aboutLeftWrapper");;
+    const aboutMeHead = $("<h3>").addClass("aboutHead");
+    aboutMeHead.text("Creative Process");
+    const aboutMeText = $("<div>").addClass("aboutMeText");
+    const p1 = $("<p>")
+    p1.text("I strive for clean and organized code so I can work more effectively. I thrive in front-end positions, There I can use my coding skills and my visual arts background and create a unique and memorable user experiences.");
+    const p2 = $("<p>")
+    p2.text("For each project I,")
+    const ul1 = $("<ul>").addClass("devList");   
+    const steps = ["Determine the goals of the project","Plan out the projects functionality","Use Adobe Photoshop to plan out front-end designs","Create a versatile framework","Combine the projects functionality and front-end designs to create a unique experience",
+    "Proof for any bugs or mistakes"
+]
+    for (i = 0; i < steps.length; i++) {
+        const li = $("<li>").text(steps[i]);
+        ul1.append(li).addClass("aboutPg3")
+    }
+   
+    aboutMeText.append(p1,p2,ul1);
     aboutMeDiv.append(aboutMeHead, aboutMeText);
-    $(".aboutTextBox").append(aboutMeDiv)
+    $(".aboutTextBox").append(aboutMeDiv);
 })
+
 
 
 
