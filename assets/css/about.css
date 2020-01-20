@@ -294,6 +294,18 @@
     .aboutLeftWrapper{
         width: 80%;
     }
+    .iconBar i {
+        display: inline;
+        font-size: 1.5em;
+        padding:.5em;
+    }
+    .iconBar {
+        position: initial;
+        top:initial;
+        right: initial;
+        margin-top: 1em;
+        
+    }
   }
   @media only screen and (max-width: 1049px){
     .aboutMeText{
