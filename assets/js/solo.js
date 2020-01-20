@@ -3,8 +3,8 @@
 const soloProjects = [{
     name: "Visit South Park",
     about: "A single mobile responsive tourism page for the fictional town of South Park",
-    deployed: "https://mattroger.github.io/visitsouthpark/deployed Link",
-    github: "https://mattroger.github.io/visitsouthpark/",
+    deployed: "https://mattroger.github.io/visitsouthpark/",
+    github: "https://github.com/MattRoger/visitsouthpark",
     image: "assets/img/portfolio/visitsp.PNG"
 
 },
