@@ -71,6 +71,8 @@ function loadMCProjects() {
     $(".buttonGroup").css("bottom", "initial");
     $(".buttonGroup").css("top", "0");
     $(".buttonGroup").css("font-size", ".5em");
+    $(".buttonGroup").addClass("buttonGroupMobile")
+
 
     const footer = $("<div>").addClass("mainNav");
     const about = $("<a>").attr("href", "#about");

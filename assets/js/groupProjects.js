@@ -41,6 +41,7 @@ function loadGroupProjects() {
     $(".buttonGroup").css("bottom", "initial");
     $(".buttonGroup").css("top", "0");
     $(".buttonGroup").css("font-size", ".5em");
+    $(".buttonGroup").addClass("buttonGroupMobile")
 
     const footer = $("<div>").addClass("mainNav");
     const about = $("<a>").attr("href", "#about");
@@ -56,6 +57,7 @@ function loadGroupProjects() {
     for (let i = 0; i < groupProjects.length; i++) {
         const project = $("<div>");
         project.addClass("project");
+        project.addClass("projectM");
 
         const title = $("<a>").attr("href", groupProjects[i].deployed)
 

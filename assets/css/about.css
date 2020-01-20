@@ -1,5 +1,5 @@
 .aboutImg {
-    width: 100%;   
+    width: 100%;
 }
 
 .aboutImg img {
@@ -11,54 +11,69 @@
     display: grid;
     grid-template-columns: 50% 50%;
     position: relative;
-    border-bottom:8px solid black;   
+    border-bottom: 8px solid black;
 }
-.aboutHover{
-    opacity: .5;  
+
+.aboutHover {
+    opacity: .5;
 }
 
 .aboutHover:hover {
-    opacity: .9;   
+    opacity: .9;
 }
 
 .quote {
     position: absolute;
-    top: 1em;    
-    width: 100%;
-    font-size: 3em;
-    line-height: 1.5em;
-    text-align: center;
-    width: 100%;
-}
-.quote3,
-.quote1{
-    color:#eeeeee;
+    top: 1em;
     width: 80%;
-    line-height: 1.5em;
+    text-align: center;
+}
+
+.quote3, .quote1 {
     text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
-    font-weight: 550;    
+    font-weight: 550;
     letter-spacing: .25em;
 }
-.quote1{
-    font-size:1.75em;
-    margin-left:5%;
+
+.quote1 p {
+    color: #e1a811;
+    line-height: 1.25em;
+    font-size: 2.25em;
+    margin-left: 5%;
+    font-family: 'Delius', cursive;
+    padding-bottom: .5em;
+    padding-left:.5em;
+    padding-top:.5em;
 }
-.quote1 p{
-    padding-bottom:.5em;
+
+.quote2 p {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 3em;
+    line-height: 2em;
 }
-.quote:last-child{
-    font-size:2.25em;
+
+.quote3 p {
+    font-size: 2.15em;
+    line-height: 1.35em;
+    padding-top:1em;
+    font-family: 'Courgette', cursive;
+    color: #e1a811;
 }
-.quote3{
+
+.quote1 :last-child {
+    font-size: 2.25em;
+}
+
+.quote2 p:last-child {
+    font-size: 4.5em;
+}
+
+.quote3 p:last-child {
     font-size: 2.5em;
 }
-.quote3:last-child{
-    font-size: 3em;
-}
-.quote p{
-    font-family: 'Bilbo Swash Caps', cursive;
-    margin-left:15%
 
+.quote p {
+    margin-left: 15%
 }
 
 .aboutImgWrapper {
@@ -114,7 +129,6 @@
     transform: rotate(90deg);
     -webkit-box-shadow: 9px 1px 13px 12px rgba(0, 0, 0, 0.58);
     box-shadow: 9px 1px 13px 12px rgba(0, 0, 0, 0.58);
-   
 }
 
 .aboutNav:hover {
@@ -125,32 +139,31 @@
 
 .aboutNavBtn {
     padding: .75em 1em;
-    color:#eae5d4;
+    color: #eae5d4;
     text-decoration: none;
 }
 
 .aboutNavBtn:hover {
-    color:#e1a811
+    color: #e1a811
 }
 
-
-
-.aboutText {    
+.aboutText {
     background-image: url("../img/vintage-concrete.png");
     width: 100%;
     grid-column-start: 2;
-    grid-column-end: 3;  
+    grid-column-end: 3;
 }
-.devList{
+
+.devList {
     text-indent: 1em;
-    list-style-type:square;
-    
+    list-style-type: square;
 }
-.devList li{
+
+.devList li {
     padding: .5em;
 }
-.devList li::first-letter{
-    
+
+.devList li::first-letter {
     font-family: 'Pirata One', cursive;
     font-size: 1.5em;
 }
@@ -176,7 +189,7 @@
 .aboutMeText {
     font-size: 1.5em;
     line-height: 1.5em;
-    height: 55vh;
+    height: 30vw;
     overflow: auto;
     padding-right: 1em;
     position: relative;
@@ -185,10 +198,11 @@
 .aboutMeText p {
     padding-top: 1em;
 }
+
 .aboutMeText p::first-letter {
     font-family: 'Pirata One', cursive;
-    font-size:1.75em;
-    color:#e1a811;
+    font-size: 1.75em;
+    color: #e1a811;
 }
 
 .selfImage {
@@ -199,26 +213,26 @@
     margin-top: 1em;
     margin-right: 1.5em;
     margin-left: -2em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
     border: 5px solid black;
 }
 
-.skillsList:first-line{
+.skillsList:first-line {
     font-family: 'Pirata One', cursive;
 }
+
 .skillsList li {
     margin-left: 1em;
 }
 
 .iconBar i {
-    display: block;
+    display: inline;
     font-size: 2em;
+    padding: .5em;
 }
 
 .iconBar {
-    position: absolute;
-    top: 15.25em;
-    right: 5.25em;
+    margin-top: 1em;
 }
 
 .aboutMeText::-webkit-scrollbar {
@@ -264,99 +278,168 @@
 }
 
 @media only screen and (max-width: 1698px) {
-    .aboutHead{
-        padding-top:0;
+    .aboutHead {
+        padding-top: 0;
     }
-    .aboutMeText{
-        height: 60vh;
+    .aboutMeText {
+        height: 40vw;
     }
-  }
-  @media only screen and (max-width: 1460px){
-    .aboutMeText{
-        height: 40vh;
+}
+
+@media only screen and (max-width: 1460px) {
+    .aboutMeText {
+        height: 31vw;
     }
-    .aboutHead{
-        font-size:2.5em;
+    .aboutHead {
+        font-size: 2.5em;
     }
-    .aboutTextNav button{
+    .aboutTextNav button {
         font-size: 1.5em;
-        padding:1em .5em 1em .5em;
+        padding: 1em .5em 1em .5em;
         text-align: center;
     }
-  }
-  @media only screen and (max-width: 1225px){
-    .aboutMeText{
-        height: 30vh;
+    
+}
+
+@media only screen and (max-width: 1225px) {
+    .quote2 p {
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+    .quote2 p:last-child {
+        font-size: 3.5em;
+    }
+    .quote3 p {
+        font-size: 2em;
+        line-height: 1.35em;
+        padding-top:1em;       
+    }
+    .aboutMeText {
+        height: 30vw;
     }
     .selfImage {
-        width: 200px;     
+        width: 200px;
     }
-    .aboutLeftWrapper{
+    .aboutLeftWrapper {
         width: 80%;
     }
     .iconBar i {
-        display: inline;
         font-size: 1.5em;
-        padding:.5em;
+        padding: .5em;
     }
-    .iconBar {
-        position: initial;
-        top:initial;
-        right: initial;
-        margin-top: 1em;
-        
+    .aboutNav {
+        font-size: 1.75em;
     }
-  }
-  @media only screen and (max-width: 1049px){
-    .aboutMeText{
-        height: 19vh;
-    }
-    .aboutTextNav button{
-        font-size: 1.25em;
-        padding:1em .5em 1em .5em;
-        text-align: center;
-    }
-    .aboutHead{
-        font-size:2.25em;
-    }    
-    .aboutMeText p::first-letter{
-        font-size:1.5em;
-    }
-    .selfImage {
-        width: 175px;     
-    }
-  }
-  @media only screen and (max-width: 949px){
-    .aboutTextNav button{
-        font-size: 1.15em;
-        padding:.5em .25em 1.5em .25em;
-        text-align: center;
-    }
-    .aboutTextNav{
-        padding-bottom: .25em;;
-    }
-    .aboutHead{
-        font-size:2em;
-    }
-    .aboutMeText{
-        font-size: 1.25em;
-        height: 22vh;
+}
 
+@media only screen and (max-width: 1049px) {
+    .quote1 p {
+        line-height: 1.15em;
+        font-size: 1.75em;       
+        padding-bottom: .25em;
+        padding-left:2.5em;
+     
+    }
+    .quote3 p {
+        font-size: 1.75em;
+        line-height: 1.15em;
+        padding-top:1em;        
+    }
+    .quote3 p:last-child {
+        font-size: 2.15em;
+    }
+    .aboutMeText {
+        height: 28vw;
+    }
+    .aboutTextNav button {
+        font-size: 1.25em;
+        padding: 1em .5em 1em .5em;
+        text-align: center;
+    }
+    .aboutHead {
+        font-size: 2.25em;
+    }
+    .aboutMeText p::first-letter {
+        font-size: 1.5em;
     }
     .selfImage {
-        width: 150px;     
+        width: 175px;
     }
-  }
-  @media only screen and (max-width: 749px){
+    .aboutNav {
+        font-size: 1.5em;
+    }
+    .iconBar i {
+        font-size: 1.40em;
+        padding: .5em;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+    .quote{
+        width: 90%;
+    }
+    .quote1 p {
+        line-height: 1.15em;
+        font-size: 1.25em; 
+        padding-left:2em;     
+    }
+    .quote1 :last-child {
+        font-size: 1.5em;
+    }
+    .quote2 p {
+        font-size: 2.25em;
+        line-height: 1.25em;
+        padding-left: 1em;
+    }
+    .quote2 p:last-child {
+        font-size: 3.25em;
+    }
+    .quote3 p {
+        font-size: 1.5em;
+        line-height: 1.15em;
+        padding-top:1em;        
+    }
+    .quote3 p:last-child {
+        font-size: 1.7em;
+    }
+    .aboutTextNav button {
+        font-size: 1.15em;
+        padding: .5em .25em 1.5em .25em;
+        text-align: center;
+    }
+    .aboutTextNav {
+        padding-bottom: .25em;
+        ;
+    }
+    .aboutHead {
+        font-size: 2em;
+    }
+    .aboutMeText {
+        font-size: 1.25em;
+        height: 30vw;
+    }
+    .selfImage {
+        width: 150px;
+    }
+    .aboutNav {
+        font-size: 1.25em;
+    }
+    .iconBar i {
+        font-size: 1.25em;
+        padding: 1em .5em;
+    }
+}
+
+@media only screen and (max-width: 749px) {
     .aboutWrapper {
-       display: block;
-       height: 100vh;
-       margin-bottom: 0;
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 1em;
     }
-    .aboutImgM{
-        width:100%
+    .aboutImgM {
+        width: 100%
     }
-    .aboutMeText{
-        height: 60vh;
+    .aboutMeText {
+        height: 100%;
     }
-  }
+}

@@ -2,10 +2,11 @@
     margin: 0;
 }
 html {
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;    
   }
- 
+ body{
+   background-image: url("../img/vintage-concrete.png");
+ }
   footer{
     margin-top: -5px;
   }

@@ -68,6 +68,8 @@ function loadSoloProjects () {
    $(".buttonGroup").css("bottom","initial");
    $(".buttonGroup").css("top","0");
    $(".buttonGroup").css("font-size",".5em");
+   $(".buttonGroup").addClass("buttonGroupMobile")
+
 
    const footer=$("<div>").addClass("mainNav");
    const about=$("<a>").attr("href", "#about");
@@ -83,6 +85,7 @@ function loadSoloProjects () {
     for (let i = 0; i < soloProjects.length; i++) {
         const project = $("<div>");
         project.addClass("project");      
+        project.addClass("projectM");      
 
         const title = $("<a>").attr("href",soloProjects[i].deployed)
 

@@ -223,7 +223,6 @@
 .projectGroupWrapper .projectTitle {
     font-size: 1.75em;
     line-height: 1.25em;
-   
 }
 
 .projectGroupWrapper img {
@@ -271,6 +270,16 @@
     .buttonGroup button {
         font-size: 2em;
     }
+    .projectGroupWrapper .project {
+        width: 225px;
+    }
+    .projectGroupWrapper .project:hover {
+        width: 250px;
+    }
+    .projectGroupWrapper .projectTitle {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
 }
 
 @media only screen and (max-width: 1049px) {
@@ -303,6 +312,16 @@
     .innerTitle {
         font-size: 1.5em;
         ;
+    }
+    .projectGroupWrapper .project {
+        width: 175px;
+    }
+    .projectGroupWrapper .project:hover {
+        width: 200px;
+    }
+    .projectGroupWrapper .projectTitle {
+        font-size: 1em;
+        line-height: 1.25em;
     }
 }
 
@@ -338,15 +357,29 @@
     .buttonGroup a {
         color: white
     }
+    .buttonGroupMobile a {
+        color: #F0C336;
+        display: initial;
+        font-size: 2.5em;
+    }
+    
+    .buttonGroupMobile {      
+        background-color: #404d2a;
+    }
     .projectWrapper {
         display: inline;
     }
     .project {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
         overflow: hidden;
         margin: .5em;
+        width: 300px;
+    }
+    .projectM{
+        width: 200px;
+        border-radius: 50%;
+        height: 200px;
+        margin-left: 15%;
+
     }
     .project img {
         width: auto;
@@ -368,7 +401,8 @@
         border-radius: 50%;
         height: 200px;
         width: 200px;
-        margin-left: 49vw;
+        /* margin-left: 55vw; */
+        margin-left: 50%;
         margin-top: -3em;
         overflow: hidden;
         font-size: .85em;
@@ -398,10 +432,57 @@
         padding: .75em;
         box-shadow: 0;
     }
+    .projectGroupWrapper .project {
+        width: 275px;
+        border-radius: 0;
+    }
+    .projectGroupWrapper .project:hover {
+        width: 300px;
+    }
+    .projectGroupWrapper .projectTitle {
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+    .projectGroupWrapper img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 }
-
-@media only screen and (max-width: 349px) {
+@media only screen and (max-width: 420px){
+    .project{
+        height: 175px;
+        width: 175px;
+        margin: .5em;      
+    }
+    .projectM {
+        
+        margin-left: 15%;
+    }
+    .aboutProject {
+        margin-left: 45%;
+        height: 175px;
+        width: 175px;
+    }
+}
+@media only screen and (max-width: 375px) {
     .buttonGroup {
         font-size: .75em;
     }
+    .project {
+        height: 150px;
+        width: 150px;
+        margin: .25em;
+        
+    }
+    .projectM {       
+        margin: .25em;
+        margin-left: 15%;     
+    }
+    .aboutProject {
+        margin-left: 40%;
+        height: 150px;
+        width: 150px;
+    }
+  
 }
