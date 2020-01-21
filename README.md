@@ -1,7 +1,7 @@
 # MattRoger.github.io
 
 ## Why This?
-Because I needed a portfolio that stands out!
+Because I needed a portfolio that stands out! :cowboy_hat_face:
 
 ## Build Status
 Mostly Yes
@@ -33,3 +33,4 @@ I can easily add or remove portfolio items by changing the
 
 
 ## License
+:copyright:
