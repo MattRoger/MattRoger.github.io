@@ -48,7 +48,7 @@ const soloProjects = [{
     about: "A Javascript based game where the computer generates a random crystal value. The player must figure out how to reach the target number using four crystals with random values.",
     deployed: "https://mattroger.github.io/crystalGuessGame/",
     github: "https://github.com/MattRoger/crystalGuessGame",
-    image: "assets/img/portfolio/crystalgame.PNG"
+    image: "assets/img/portfolio/crystalgame.png"
 },
 {
     name: "Psychic Game",
