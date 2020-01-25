@@ -6,7 +6,7 @@ const soloProjects = [
     about: "A single mobile responsive page fora local dark room printer. The landing page features an image going from negative to positive",
     deployed: "https://mattroger.github.io/DarkRoom/",
     github: "https://github.com/MattRoger/darkroom",
-    image: "assets/img/portfolio/darkroom.PNG"
+    image: "assets/img/portfolio/darkroom.png"
 
 },
     {
