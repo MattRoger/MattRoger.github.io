@@ -2,7 +2,7 @@
 
 const soloProjects = [
     {
-    name: "Dark Room Printing",
+    name: "DarkRoom Printing",
     about: "A single mobile responsive page fora local dark room printer. The landing page features an image going from negative to positive",
     deployed: "https://mattroger.github.io/DarkRoom/",
     github: "https://github.com/MattRoger/darkroom",
