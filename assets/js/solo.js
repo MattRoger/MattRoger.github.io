@@ -2,6 +2,14 @@
 
 const soloProjects = [
     {
+    name: "Pokemon Fire, Grass, Water",
+    about: "A Take on Rock, Paper, Scissors. Featuring Pokemon and JQuery Dom",
+    deployed: "https://mattroger.github.io/pokemonRPS/",
+    github: "https://github.com/MattRoger/pokemonrps",
+    image: "assets/img/portfolio/pokemonFGW.PNG"
+
+},
+    {
     name: "DarkRoom Printing",
     about: "A single mobile responsive page fora local dark room printer. The landing page features an image going from negative to positive",
     deployed: "https://mattroger.github.io/DarkRoom/",
