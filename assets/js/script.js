@@ -62,7 +62,7 @@ $("#techSkills").on("click", function () {
     }
     const ul4 = $("<ul>").addClass("skillsList");
     ul4.text("Other Great Coding Skills");
-    const other = ["JQuery", "React", "Styled-Components", "NPMs", "Express.js","Pug.js ", "Responsive Web Design", "Adobe Photoshop"]
+    const other = ["jQuery", "React", "Styled-Components", "NPMs", "Express.js","Pug.js ", "Responsive Web Design","TypeScript", "Angular", "Adobe Photoshop"]
     for (i = 0; i < other.length; i++) {
         const li = $("<li>").text(other[i]);
         ul4.append(li)

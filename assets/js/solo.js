@@ -1,9 +1,8 @@
-// import {loadGroupProjects} from './groupProjects'
 
 const soloProjects = [
     {
     name: "Pokemon Fire, Grass, Water",
-    about: "A Take on Rock, Paper, Scissors. Featuring Pokemon and JQuery Dom",
+    about: "A Take on Rock, Paper, Scissors. Featuring Pokemon and jQuery Dom",
     deployed: "https://mattroger.github.io/pokemonRPS/",
     github: "https://github.com/MattRoger/pokemonrps",
     image: "assets/img/portfolio/pokemonFGW.PNG"
@@ -11,7 +10,7 @@ const soloProjects = [
 },
     {
     name: "DarkRoom Printing",
-    about: "A single mobile responsive page fora local dark room printer. The landing page features an image going from negative to positive",
+    about: "A single mobile responsive page fora local dark room printer. The landing page features an image going from negative to positive. Built with Bootstrap",
     deployed: "https://mattroger.github.io/DarkRoom/",
     github: "https://github.com/MattRoger/darkroom",
     image: "assets/img/portfolio/darkroom.png"
@@ -27,21 +26,21 @@ const soloProjects = [
 },
 {
     name: "Colorado Clicky Game",
-    about: "A memory games built with reach and styled components",
+    about: "A memory games built with React and styled components",
     deployed: "https://clickygame9999.herokuapp.com/",
     github: "https://github.com/MattRoger/workingClicky",
     image: "assets/img/portfolio/clickygame.PNG"
 },
 {
     name: "Sci-Fi Friend Finder",
-    about: "A web app for finding your sci-fi companion. Using Node.js and Express.jsr",
+    about: "A web app for finding your sci-fi companion. Using Node and Express",
     deployed: "https://evening-sea-45437.herokuapp.com/",
     github: "https://github.com/MattRoger/friendFinder",
     image: "assets/img/portfolio/friendfinder.PNG"
 },
 {
     name: "Star Wars Trivia",
-    about: "Star Wars trivia game is a timed trivia game. At the end of the game, the player is awarded a rank based on home many questions they answered correct.",
+    about: "Star Wars trivia game is a timed trivia game. At the end of the game, the player is awarded a rank based on home many questions they answered correct. Built with jQuery.",
     deployed: "https://mattroger.github.io/triviaGame/",
     github: "https://github.com/MattRoger/triviaGame",
     image: "assets/img/portfolio/starwarstrivia.PNG"

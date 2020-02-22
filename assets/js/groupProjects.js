@@ -11,7 +11,7 @@ const groupProjects = [{
 },
 {
     name: "Spoiler Alert",
-    about: "A website for talking about spoilers with fellow fans. This website uses Pug, Express, Passport, and MySql.",
+    about: "A website for talking about spoilers with fellow fans. This website uses Pug, jQuery, Express, Passport, and MySql.",
     deployed: "https://shrouded-eyrie-44738.herokuapp.com/",
     github: "https://github.com/MattRoger/Spoiler-Alertgithublink",
     image: "assets/img/portfolio/spoileralert.PNG"

@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!-- Page Header -->
     <Header>
         <div class="introHead">
             <h1 class="name text-effect">Matt Roger</h1>
@@ -36,10 +37,12 @@
             </nav>
         </div>
     </Header>
+    <!-- About Section -->
     <section id="about">
         <div class="aboutWrapper">
             <img src="assets/img/aboutM.jpg" class="mobile aboutImgM">
             <div class="wrapper aboutImgWrapper full">
+                <!-- quote 1 -->
                 <div class="aboutSwitch aboutHover">
                     <div class="quote quote1">
                         <p class="">The clearest way into the Universe is through a forest wilderness.</p>
@@ -47,6 +50,7 @@
                     </div>
                     <img src="assets/img/elk.jpg" class="aboutImg ">
                 </div>
+                <!-- quote 2 -->
                 <div class="aboutSwitch2 aboutHover">
                     <div class="quote quote2">
                         <p>The fox knows many things</p>
@@ -55,6 +59,7 @@
                     </div>
                     <img src="assets/img/fox2.jpg" class="aboutImg">
                 </div>
+                <!-- quote 3 -->
                 <div class="aboutSwitch3 aboutHover">
                     <div class="quote quote3">
                         <p>It's an energy field created by all living things. It surrounds us and penetrates us. It binds the galaxy together.</p>
@@ -62,31 +67,40 @@
                     </div>
                     <img src="assets/img/bison.jpg" class="aboutImg">
                 </div>
+                <!-- nav sections left side -->
                 <nav class="aboutNav">
                     <a href="#about" class="btnLeft aboutNavBtn">About</a>
                     <a href="#portfolio" class="aboutNavBtn">Portfolio</a>
                     <a href="#contact" class="btnRight aboutNavBtn">Contact</a>
                 </nav>
             </div>
+            <!-- text section. links to script.js -->
             <div class="aboutText">
                 <div class="aboutTextNav">
                     <button id="aboutMeBtn">About Me</button>
                     <button id="techSkills">Tech Skills</button>
                     <button id="socialSkills">Creative Process</button>
                 </div>
-                <div class="aboutTextBox"></div>
+                <div class="aboutTextBox">
+                    <!-- text appears here -->
+                </div>
             </div>
         </div>
 
     </section>
+    <!-- portfolio -->
     <section id="portfolio">
         <div class="wrapper">
             <h2 class="portfolioHeadText text-effect">Portfolio</h2>
             <img src="assets/img/portfolio.jpg" class="portfolioHeadImg full">
             <img src="assets/img/portfolioM.jpg" class="portfolioHeadImg mobile">
+            <!-- nav bar -->
             <div class="buttonGroup">
+                <!-- groupProjects.js creates content -->
                 <button id="portBtn1"><a href="#mainContent">Group Projects</a></button>
+                <!-- solo.js creates content -->
                 <button id="portBtn2"><a href="#mainContent">Solo Projects</a></button>
+                <!-- mailchimp.js creates content -->
                 <button id="portBtn3"><a href="#mainContent">Success With MailChimp</a></button>
             </div>
         
@@ -98,6 +112,7 @@
             <img src="assets/img/contact.jpg" class="contactImg full">
             <img src="assets/img/contactM.jpg" class="contactImg mobile">
             <div class="contactInfo">
+                <!-- data-clipboard-text uses clipboard.js library to copy text to clip board -->
                 <button class="btn hoverColor" id="emailBtn" data-clipboard-text="mattroger.webdev@gmail.com">
                     <i class="far fa-envelope"></i>
                     Email Me!
@@ -120,6 +135,7 @@
 
             </div>
             <div>
+                <!-- creates a message window with -->
                 <button class="messageBtn hoverColor">
                     <i class="far fa-comment-alt"> </i>
                     Send Me A Message
