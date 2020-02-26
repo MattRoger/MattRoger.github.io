@@ -15,13 +15,13 @@ function loadAboutMe(){
     aboutMeHead.text("A little about me");
     const aboutMeText = $("<div>").addClass("aboutMeText");
     const p1 = $("<p>")
-    p1.text("A University of Denver full-stack coding Bootcamp, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge. ");
+    p1.text("A University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts cooking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.");
     const p2 = $("<p>");
-    p2.text("I am currently the lab/social media manager at Denver Pro Photo. There, my responsibilities include, but are not limited to providing high-quality lab services, managing the store’s website, and fostering business by creating sales and mass email campaigns to bring customers into the store. I currently have an open rate averaging around 30%, above the industry average.");
+    p2.text("I am currently the lab/social media manager at Denver Pro Photo. My responsibilities include, providing high-quality lab services, managing the store’s website, and fostering business by creating sales and mass email campaigns to bring customers into the store.");
     const p3 = $("<p>");
-    p3.text("My attention to detail and dedication to providing customers with the best quality services has led the company to increase sales, not just the lab but across the board. One of my favorite projects to bring attention to Denver Pro Photo was organizing an online photo contest. I was able to get our supply dealers to sponsor the contest and provide prizes.");
+    p3.text("Creating graphics and layouts for promotions really helped add clarity and flair to my front-end developing skills. Now, in Photoshop, instead of editing photos, I spend most of my time creating web page layouts. There I can easily adjust colors and element placement to create dazzling styling and coherent framework.");
     const p4 = $("<p>");
-    p4.text("As I transition from my career in photography into a career in coding, I am looking for a company that will help me grow my skills as a web developer, but that will also value my past experience in the art world");
+    p4.text("As I transition from my career in photography into a career in coding, I am looking for a company that will help me grow my skills as a web developer, but that will also value my past experience in the art world.");
     const selfImage = $("<img>").attr("src", "assets/img/self.jpg");
     selfImage.addClass("selfImage");
     aboutMeDiv.append(aboutMeHead, aboutMeText);

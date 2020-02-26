@@ -3,7 +3,7 @@
 
 const groupProjects = [{
     name: "Zombies Need Brains",
-    about: "A educational game built with React",
+    about: "An educational gaming website to teach spelling and math. <br> React, Styled Components, Reactstrap",
     deployed: "https://lit-crag-22298.herokuapp.com/",
     github: "https://github.com/MattRoger/Zombies-Need-Brains",
     image: "assets/img/portfolio/zombies.PNG"
