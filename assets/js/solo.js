@@ -12,6 +12,7 @@ const soloProjects = [
 {
     name: "DarkRoom Printing",
     about: "A single mobile responsive page for a local darkroom printer.",
+    tech:"JavaScript, jQuery, Bootstrap, CSS, HTML",
     deployed: "https://mattroger.github.io/DarkRoom/",
     github: "https://github.com/MattRoger/darkroom",
     image: "assets/img/portfolio/darkroom.png"
@@ -37,6 +38,7 @@ const soloProjects = [
 {
     name: "Sci-Fi Friend Finder",
     about: "A web app for finding your sci-fi companion.",
+    tech:"Node.js, Express, JavaScript, CSS, HTML",
     deployed: "https://evening-sea-45437.herokuapp.com/",
     github: "https://github.com/MattRoger/friendFinder",
     image: "assets/img/portfolio/friendfinder.PNG"
