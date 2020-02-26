@@ -3,7 +3,8 @@
 
 const groupProjects = [{
     name: "Zombies Need Brains",
-    about: "An educational gaming website to teach spelling and math. <br> React, Styled Components, Reactstrap",
+    about: "An educational gaming website to teach spelling and math.",
+    tech:"React, Styled Components, Reactstrap",
     deployed: "https://lit-crag-22298.herokuapp.com/",
     github: "https://github.com/MattRoger/Zombies-Need-Brains",
     image: "assets/img/portfolio/zombies.PNG"
@@ -11,14 +12,16 @@ const groupProjects = [{
 },
 {
     name: "Spoiler Alert",
-    about: "A website for talking about spoilers with fellow fans. This website uses Pug, jQuery, Express, Passport, and MySql.",
+    about: "A website for talking about spoilers with fellow fans.",
+    tech:"Pug, JavaScript,  jQuery, Express, Passport, MySql.",
     deployed: "https://shrouded-eyrie-44738.herokuapp.com/",
     github: "https://github.com/MattRoger/Spoiler-Alertgithublink",
     image: "assets/img/portfolio/spoileralert.PNG"
 },
 {
     name: "World Watcher",
-    about: "A group project using multiple api's to create a country information search. Add a country and find the country's statics, weather, and news.",
+    about: "Search for a country to find out about the country's statistics, weather, and news.",
+    tech:"JavaScript, news.api, weather.api, CSS, HTML",
     deployed: "https://mattroger.github.io/project1/",
     github: "https://github.com/MattRoger/project1",
     image: "assets/img/portfolio/worldwatcher.PNG"

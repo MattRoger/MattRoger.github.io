@@ -2,73 +2,81 @@
 const soloProjects = [
     {
     name: "Pokemon Fire, Grass, Water",
-    about: "A Take on Rock, Paper, Scissors. Featuring Pokemon and jQuery Dom",
+    about: "A Take on Rock, Paper, Scissors. Featuring Pokemon.",
+    tech:"Javascript, jQuery, CSS, HTML",
     deployed: "https://mattroger.github.io/pokemonRPS/",
     github: "https://github.com/MattRoger/pokemonrps",
     image: "assets/img/portfolio/pokemonFGW.PNG"
-
+    
 },
-    {
+{
     name: "DarkRoom Printing",
-    about: "A single mobile responsive page fora local dark room printer. The landing page features an image going from negative to positive. Built with Bootstrap",
+    about: "A single mobile responsive page for a local darkroom printer.",
     deployed: "https://mattroger.github.io/DarkRoom/",
     github: "https://github.com/MattRoger/darkroom",
     image: "assets/img/portfolio/darkroom.png"
-
+    
 },
-    {
+{
     name: "Visit South Park",
     about: "A single mobile responsive tourism page for the fictional town of South Park",
+    tech:"CSS, HTML",
     deployed: "https://mattroger.github.io/visitsouthpark/",
     github: "https://github.com/MattRoger/visitsouthpark",
     image: "assets/img/portfolio/visitsp.PNG"
-
+    
 },
 {
     name: "Colorado Clicky Game",
-    about: "A memory games built with React and styled components",
+    about: "A game that tests the user’s memory.",
+    tech:"React, Styled Components, Reactstrap",
     deployed: "https://clickygame9999.herokuapp.com/",
     github: "https://github.com/MattRoger/workingClicky",
     image: "assets/img/portfolio/clickygame.PNG"
 },
 {
     name: "Sci-Fi Friend Finder",
-    about: "A web app for finding your sci-fi companion. Using Node and Express",
+    about: "A web app for finding your sci-fi companion.",
     deployed: "https://evening-sea-45437.herokuapp.com/",
     github: "https://github.com/MattRoger/friendFinder",
     image: "assets/img/portfolio/friendfinder.PNG"
 },
 {
     name: "Star Wars Trivia",
-    about: "Star Wars trivia game is a timed trivia game. At the end of the game, the player is awarded a rank based on home many questions they answered correct. Built with jQuery.",
+    about:"A timed trivia game that ranks the user’s Star Wars knowledge.",
+    tech:"JavaScript, jQuery, CSS, HTML",
     deployed: "https://mattroger.github.io/triviaGame/",
     github: "https://github.com/MattRoger/triviaGame",
     image: "assets/img/portfolio/starwarstrivia.PNG"
 },
 {
     name: "Liri Bot",
-    about: "Liri bot is a node search tool for Omdb api, bandsInTown api, and spotify. Liri demonstrates use of npm packages deployed by node.",
+    about: "Liri bot is a node search tool for Omdb API, bandsInTown api, and spotify.",
+    tech:"JavaScript, Node.js, APIs",
     deployed: "https://github.com/MattRoger/Liri/blob/master/README.md",
     github: "https://github.com/MattRoger/Liri/blob/master/README.md",
     image: "assets/img/portfolio/liri.PNG"
 },
 {
     name: "7 Deadly Sins Giphy Generator",
-    about: "Click on a button to generate 10 gifs from the giphy api using the button as a search term. Add a sin to the button bar!",
+    about: "A 7 Deadly Sins gif generator that allows users to play gifs or add their own sins.",
+    tech:"JavaScript, jQuery, Giphy API, CSS, HTML",
     deployed: "https://mattroger.github.io/giphyGen/",
     github: "https://github.com/MattRoger/giphyGen",
     image: "assets/img/portfolio/giphygen.PNG"
 },
 {
     name: "Kalaxian Crystals",
-    about: "A Javascript based game where the computer generates a random crystal value. The player must figure out how to reach the target number using four crystals with random values.",
+    about: "Reach a randomly generated target value by using four crystals with random values.",
+    tech:"JavaScript, jQuery, CSS, HTML",
     deployed: "https://mattroger.github.io/crystalGuessGame/",
     github: "https://github.com/MattRoger/crystalGuessGame",
     image: "assets/img/portfolio/crystalgame.png"
 },
 {
     name: "Psychic Game",
-    about: "A Javascript based game where the computer generates a random letter and the player has to try and guess the letter. This script shows Javascript basics and uses a for loop and a Math.Random function.",
+    about: "A game where the computer generates a random letter for the player to guess.",
+    tech:"JavaScript, CSS, HTML",
     deployed: "https://mattroger.github.io/psychic-game/",
     github: "https://github.com/MattRoger/psychic-game",
     image: "assets/img/portfolio/psychicGame.PNG"
