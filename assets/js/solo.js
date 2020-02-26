@@ -104,60 +104,42 @@ function loadSoloProjects () {
    contact.text("Contact")
    footer.append(about, portfolio, contact)
 
-    const projectWrapper = $("<div>")
-    projectWrapper.addClass("projectWrapper")
-    for (let i = 0; i < soloProjects.length; i++) {
-        const project = $("<div>");
-        project.addClass("project");      
-        project.addClass("projectM");      
+   const projectWrapper = $("<div>")
+   projectWrapper.addClass("projectWrapper")
+   for (let i = 0; i < soloProjects.length; i++) {
+       const project = $("<div>");
+       project.addClass("project");
+       const title = $("<a>").attr("href", soloProjects[i].deployed)
 
-        const title = $("<a>").attr("href",soloProjects[i].deployed)
+       title.text(soloProjects[i].name);
+       title.addClass("projectTitle")
 
-        title.text(soloProjects[i].name);
-        title.addClass("projectTitle") 
+       const titleInner = $("<p>")
+       titleInner.addClass("innerTitle")
+       titleInner.text(soloProjects[i].name)
+       const aboutProject = $("<p>").text(soloProjects[i].about);
+       const techUsed = $("<p>").text(soloProjects[i].tech);
+       aboutProject.append(techUsed)
+       aboutProject.addClass("aboutProject")
 
-        const titleInner  = $("<p>") 
-        const titleInner2  = $("<p>") 
-        titleInner.addClass("innerTitle")
-        titleInner2.addClass("innerTitle")
-        titleInner.text(soloProjects[i].name)     
-        titleInner2.text(soloProjects[i].name)     
-        const aboutProject = $("<p>").text(soloProjects[i].about);
-        const aboutProject2= $("<p>").text(soloProjects[i].about);
-        aboutProject.addClass("aboutProject")
-        aboutProject2.addClass("aboutProject")
-        
 
-        const gitHubLink = $("<a>").text("See the Code");
-        const gitHubLink2 = $("<a>").text("See the Code");
-        gitHubLink.attr("href",soloProjects[i].github)
-        gitHubLink2.attr("href",soloProjects[i].github)
-        gitHubLink.addClass("portLinks");
-        gitHubLink2.addClass("portLinks");
-        
-        const dLink = $("<a>").text("See it Live");
-        dLink.attr("href",soloProjects[i].deployed);
-        dLink.addClass("portLinks");
-        const linkWrapper=$("<div>").addClass("linkWrapper");
-        const linkWrapper2=$("<div>").addClass("linkWrapper");
-        linkWrapper.append(gitHubLink, dLink)
-        linkWrapper2.append(gitHubLink2)
-        
+       const gitHubLink = $("<a>").text("See the Code");
+       gitHubLink.attr("href", soloProjects[i].github)
+       gitHubLink.addClass("portLinks");
 
-        aboutProject.prepend(titleInner);
-        aboutProject2.prepend(titleInner2);
-        aboutProject.append(linkWrapper);
-        aboutProject2.append(linkWrapper2);
-        
-        const portMobile=$("<div>").addClass("portMobile")
-        
-        const previewImg = $("<img>");
-        previewImg.attr("src", soloProjects[i].image);
-        project.append( aboutProject, title, previewImg);
-        projectWrapper.append(project)
-        portMobile.append(aboutProject2);
-        projectWrapper.append(portMobile);
-        
-    }
-    $(".portGroup").append(projectWrapper, footer);
+       const dLink = $("<a>").text("See it Live");
+       dLink.attr("href", soloProjects[i].deployed);
+       dLink.addClass("portLinks");
+       const linkWrapper = $("<div>").addClass("linkWrapper");
+       linkWrapper.append(gitHubLink, dLink)
+       aboutProject.prepend(titleInner);  
+       aboutProject.append(linkWrapper);
+     
+
+       const previewImg = $("<img>");
+       previewImg.attr("src", soloProjects[i].image);
+       project.append(aboutProject, title, previewImg);
+       projectWrapper.append(project) 
+   }
+   $(".portGroup").append(projectWrapper, footer);
 }
