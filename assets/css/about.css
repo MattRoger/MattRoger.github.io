@@ -81,22 +81,24 @@
     grid-column-end: 2;
     border-right: 4px solid black;
 }
-
+.aboutTextNav button::first-letter {
+    font-family: 'Pirata One', cursive;
+    font-size: 1.75em;
+    color: #e1a811;
+}
 .aboutTextNav {
     text-align: center;
-    background-image: url("../img/banner.png");
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position: center;
     padding-top: .5em;
     padding-bottom: 2.7em;
 }
 
-.aboutTextNav button {
+.aboutTextNav button {    
     background: none;
-    border: none;
+    border-bottom: 5px solid #000000;
+    border-right: 5px solid #000000;
     font-size: 2em;
-    padding: 1em;
+    padding: .5em;
+    margin:.15em;
     font-family: 'Pirata One', cursive;
 }
 
