@@ -1,4 +1,8 @@
 # MattRoger.github.io
+A portfolio page for Matt Roger, Web Developer
+
+[See The Site](https://mattroger.github.io/)
+
 
 ## Why This?
 Because I needed a portfolio that stands out! :cowboy_hat_face:
