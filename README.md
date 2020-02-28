@@ -37,4 +37,4 @@ I can easily add or remove portfolio items by changing the
 
 
 ## License
-:copyright:
+:copyright: Matt Roger
