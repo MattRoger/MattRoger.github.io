@@ -21,7 +21,7 @@ const groupProjects = [{
 {
     name: "World Watcher",
     about: "Search for a country to find out about the country's statistics, weather, and news.",
-    tech:"JavaScript, news.api, weather.api, CSS, HTML",
+    tech:"JavaScript, News API, Open Weather.api,, RESTCountries API, CSS, HTML",
     deployed: "https://mattroger.github.io/project1/",
     github: "https://github.com/MattRoger/project1",
     image: "assets/img/portfolio/worldwatcher.PNG"

@@ -15,7 +15,7 @@ function loadAboutMe(){
     aboutMeHead.text("A little about me");
     const aboutMeText = $("<div>").addClass("aboutMeText");
     const p1 = $("<p>")
-    p1.text("A University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts cooking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.");
+    p1.text("A University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.");
     const p2 = $("<p>");
     p2.text("I am currently the lab/social media manager at Denver Pro Photo. My responsibilities include, providing high-quality lab services, managing the store’s website, and fostering business by creating sales and mass email campaigns to bring customers into the store.");
     const p3 = $("<p>");
