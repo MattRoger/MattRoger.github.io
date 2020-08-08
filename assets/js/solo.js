@@ -1,147 +1,108 @@
 
-const soloProjects = [
-    {
-    name: "Pokemon Fire, Grass, Water",
-    about: "A Take on Rock, Paper, Scissors. Featuring Pokemon.",
-    tech:"Javascript, jQuery, CSS, HTML",
-    deployed: "https://mattroger.github.io/pokemonRPS/",
-    github: "https://github.com/MattRoger/pokemonrps",
-    image: "assets/img/portfolio/pokemonFGW.PNG"
-    
-},
-{
-    name: "DarkRoom Printing",
-    about: "A single mobile responsive page for a local darkroom printer.",
-    tech:"JavaScript, jQuery, Bootstrap, CSS, HTML",
-    deployed: "https://mattroger.github.io/DarkRoom/",
-    github: "https://github.com/MattRoger/darkroom",
-    image: "assets/img/portfolio/darkroom.png"
-    
-},
-{
-    name: "Visit South Park",
-    about: "A single mobile responsive tourism page for the fictional town of South Park",
-    tech:"CSS, HTML",
-    deployed: "https://mattroger.github.io/visitsouthpark/",
-    github: "https://github.com/MattRoger/visitsouthpark",
-    image: "assets/img/portfolio/visitsp.PNG"
-    
-},
-{
-    name: "Colorado Clicky Game",
-    about: "A game that tests the user’s memory.",
-    tech:"React, Styled Components, Reactstrap",
-    deployed: "https://clickygame9999.herokuapp.com/",
-    github: "https://github.com/MattRoger/workingClicky",
-    image: "assets/img/portfolio/clickygame.PNG"
-},
-{
-    name: "Sci-Fi Friend Finder",
-    about: "A web app for finding your sci-fi companion.",
-    tech:"Node.js, Express, JavaScript, CSS, HTML",
-    deployed: "https://evening-sea-45437.herokuapp.com/",
-    github: "https://github.com/MattRoger/friendFinder",
-    image: "assets/img/portfolio/friendfinder.PNG"
-},
-{
-    name: "Star Wars Trivia",
-    about:"A timed trivia game that ranks the user’s Star Wars knowledge.",
-    tech:"JavaScript, jQuery, CSS, HTML",
-    deployed: "https://mattroger.github.io/triviaGame/",
-    github: "https://github.com/MattRoger/triviaGame",
-    image: "assets/img/portfolio/starwarstrivia.PNG"
-},
-{
-    name: "Liri Bot",
-    about: "Liri bot is a node search tool for Omdb API, bandsInTown api, and spotify.",
-    tech:"JavaScript, Node.js, APIs",
-    deployed: "https://github.com/MattRoger/Liri/blob/master/README.md",
-    github: "https://github.com/MattRoger/Liri/blob/master/README.md",
-    image: "assets/img/portfolio/liri.PNG"
-},
-{
-    name: "7 Deadly Sins Giphy Generator",
-    about: "A 7 Deadly Sins gif generator that allows users to play gifs or add their own sins.",
-    tech:"JavaScript, jQuery, Giphy API, CSS, HTML",
-    deployed: "https://mattroger.github.io/giphyGen/",
-    github: "https://github.com/MattRoger/giphyGen",
-    image: "assets/img/portfolio/giphygen.PNG"
-},
-{
-    name: "Kalaxian Crystals",
-    about: "Reach a randomly generated target value by using four crystals with random values.",
-    tech:"JavaScript, jQuery, CSS, HTML",
-    deployed: "https://mattroger.github.io/crystalGuessGame/",
-    github: "https://github.com/MattRoger/crystalGuessGame",
-    image: "assets/img/portfolio/crystalgame.png"
-},
-{
-    name: "Psychic Game",
-    about: "A game where the computer generates a random letter for the player to guess.",
-    tech:"JavaScript, CSS, HTML",
-    deployed: "https://mattroger.github.io/psychic-game/",
-    github: "https://github.com/MattRoger/psychic-game",
-    image: "assets/img/portfolio/psychicGame.PNG"
-},
-]
-$("#portBtn2").on("click", function(){    
-    loadSoloProjects()
-})
+    const load_solo_projects=() => {
+         console.log("solo loaded")
+        const catalog = [
+            new Project(
+                "Pokemon Fire, Grass, Water",
+                "A Take on Rock, Paper, Scissors. Featuring Pokemon.",
+                "https://mattroger.github.io/pokemonRPS/",
+                "https://github.com/MattRoger/pokemonrps",
+                "assets/img/portfolio/pokemonFGW.PNG",
+                ["JavaScript", "jQuery", "CSS", "HTML"]
+            ),
+            new Project(
+                "DarkRoom Printing",
+                "A single mobile responsive page for a local darkroom printer.",
+                "https://mattroger.github.io/DarkRoom/",
+                "https://github.com/MattRoger/darkroom",
+                "https://github.com/MattRoger/darkroom",
+                "assets/img/portfolio/darkroom.png",
+                ["JavaScript, jQuery, Bootstrap, CSS, HTML"],
+            ),
+            new Project(
+                "Visit South Park",
+                "A single mobile responsive tourism page for the fictional town of South Park",
+                "https://mattroger.github.io/visitsouthpark/",
+                "https://github.com/MattRoger/visitsouthpark",
+                "https://github.com/MattRoger/visitsouthpark",
+                "assets/img/portfolio/visitsp.PNG",
+                ["CSS, HTML"],
+            ),
+            new Project(
+                "Colorado Clicky Game",
+                "A game that tests the user’s memory.",
+                "https://clickygame9999.herokuapp.com/",
+                "https://github.com/MattRoger/workingClicky",
+                "https://github.com/MattRoger/workingClicky",
+                "assets/img/portfolio/clickygame.PNG",
+                ["React, Styled Components, Reactstrap"],
+                ),
+            new Project(
+                "Sci-Fi Friend Finder",
+                "A web app for finding your sci-fi companion.",
+                "https://evening-sea-45437.herokuapp.com/",
+                "https://github.com/MattRoger/friendFinder",
+                "https://github.com/MattRoger/friendFinder",
+                "assets/img/portfolio/friendfinder.PNG",
+                "[Node.js, Express, JavaScript, CSS, HTML]",
+            ),
+            new Project(
+                "Star Wars Trivia",
+                "A timed trivia game that ranks the user’s Star Wars knowledge.",
+                "https://mattroger.github.io/triviaGame/",
+                "https://github.com/MattRoger/triviaGame",
+                "https://github.com/MattRoger/triviaGame",
+                "assets/img/portfolio/starwarstrivia.PNG",
+                "[JavaScript, jQuery, CSS, HTML]",
+                ),
+            new Project(
+                "Liri Bot",
+                "Liri bot is a node search tool for Omdb API, bandsInTown api, and spotify.",
+                "https://github.com/MattRoger/Liri/blob/master/README.md",
+                "https://github.com/MattRoger/Liri/blob/master/README.md",
+                "https://github.com/MattRoger/Liri/blob/master/README.md",
+                "assets/img/portfolio/liri.PNG",
+                "[JavaScript, Node.js, APIs]",
+                ),
+            new Project(
+                "7 Deadly Sins Giphy Generator",
+                "A 7 Deadly Sins gif generator that allows users to play gifs or add their own sins.",
+                "https://mattroger.github.io/giphyGen/",
+                "https://github.com/MattRoger/giphyGen",
+                "https://github.com/MattRoger/giphyGen",
+                "assets/img/portfolio/giphygen.PNG",
+                "[JavaScript, jQuery, Giphy API, CSS, HTML]",
+                ),
+                new Project(
+                    "Kalaxian Crystals",
+                    "Reach a randomly generated target value by using four crystals with random values.",
+                    "https://mattroger.github.io/crystalGuessGame/",
+                    "https://github.com/MattRoger/crystalGuessGame",
+                    "https://github.com/MattRoger/crystalGuessGame",
+                    "assets/img/portfolio/crystalgame.png",
+                    "[JavaScript, jQuery, CSS, HTML]",
+                    ),
+                    new Project(
+                        "Psychic Game",
+                        "A game where the computer generates a random letter for the player to guess.",
+                        "https://mattroger.github.io/psychic-game/",
+                        "https://github.com/MattRoger/psychic-game",
+                        "https://github.com/MattRoger/psychic-game",
+                        "assets/img/portfolio/psychicGame.PNG",
+                        "[JavaScript, CSS, HTML]",
+                        ),
+                    ];
+                    
+                    
+              
+    for (let i = 0; i < catalog.length; i++) {
+        // console.log(catalog[i]);
+        catalog[i].create_project_card()
+    }
 
-function loadSoloProjects () {    
-   $(".portGroup").empty();
-   $(".buttonGroup").css("position","sticky");
-   $(".buttonGroup").css("bottom","initial");
-   $(".buttonGroup").css("top","0");
-   $(".buttonGroup").css("font-size",".5em");
-   $(".buttonGroup").addClass("buttonGroupMobile")
-
-
-   const footer=$("<div>").addClass("mainNav");
-   const about=$("<a>").attr("href", "#about");
-   const portfolio=$("<a>").attr("href", "#portfolio");
-   const contact=$("<a>").attr("href", "#contact");
-   about.text("About");
-   portfolio.text("Portfolio")
-   contact.text("Contact")
-   footer.append(about, portfolio, contact)
-
-   const projectWrapper = $("<div>")
-   projectWrapper.addClass("projectWrapper")
-   for (let i = 0; i < soloProjects.length; i++) {
-       const project = $("<div>");
-       project.addClass("project");
-       const title = $("<a>").attr("href", soloProjects[i].deployed)
-
-       title.text(soloProjects[i].name);
-       title.addClass("projectTitle")
-
-       const titleInner = $("<p>")
-       titleInner.addClass("innerTitle")
-       titleInner.text(soloProjects[i].name)
-       const aboutProject = $("<p>").text(soloProjects[i].about);
-       const techUsed = $("<p>").text(soloProjects[i].tech);
-       aboutProject.append(techUsed)
-       aboutProject.addClass("aboutProject")
-
-
-       const gitHubLink = $("<a>").text("See the Code");
-       gitHubLink.attr("href", soloProjects[i].github)
-       gitHubLink.addClass("portLinks");
-
-       const dLink = $("<a>").text("See it Live");
-       dLink.attr("href", soloProjects[i].deployed);
-       dLink.addClass("portLinks");
-       const linkWrapper = $("<div>").addClass("linkWrapper");
-       linkWrapper.append(gitHubLink, dLink)
-       aboutProject.prepend(titleInner);  
-       aboutProject.append(linkWrapper);
-     
-
-       const previewImg = $("<img>");
-       previewImg.attr("src", soloProjects[i].image);
-       project.append(aboutProject, title, previewImg);
-       projectWrapper.append(project) 
-   }
-   $(".portGroup").append(projectWrapper, footer);
+                                            
 }
+
+$(".solo-project-button").on("click", function(){
+    load_solo_projects();
+});

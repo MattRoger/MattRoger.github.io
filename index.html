@@ -1,182 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Matt Roger Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Courgette|Delius|Gentium+Book+Basic|Heebo|Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Courgette|Delius|Gentium+Book+Basic|Heebo|Pirata+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-    <script src="https://kit.fontawesome.com/e85b486770.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e85b486770.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-    <!-- Page Header -->
-    <Header>
-        <div class="introHead">
-            <h1 class="name text-effect">Matt Roger</h1>
-            <h2 class="title text-effect">Web Developer | Photographer | Artist</h2>
-            <img src="assets/img/intro.jpg" alt="bison" class="intro full">
-            <img src="assets/img/introM.jpg" alt="bisonV" class="intro mobile">
-            <nav class="introNav">
-                <a href="#about" class="text-effect">About</a>
-                <a href="#portfolio" class="text-effect">Portfolio</a>
-                <a href="#contact" class="text-effect">Contact</a>
-            </nav>
-        </div>
-    </Header>
-    <!-- About Section -->
-    <section id="about">
-        <div class="aboutWrapper">
-            <img src="assets/img/aboutM.jpg" class="mobile aboutImgM">
-            <div class="wrapper aboutImgWrapper full">
-                <!-- quote 1 -->
-                <div class="aboutSwitch aboutHover">
-                    <div class="quote quote1">
-                        <p class="">The clearest way into the Universe is through a forest wilderness.</p>
-                        <p class="">John Muir</p>
-                    </div>
-                    <img src="assets/img/elk.jpg" class="aboutImg ">
-                </div>
-                <!-- quote 2 -->
-                <div class="aboutSwitch2 aboutHover">
-                    <div class="quote quote2">
-                        <p>The fox knows many things</p>
-                        <p> but a hedgehog one important thing</p>
-                        <p><i>Archilochus</i></p>
-                    </div>
-                    <img src="assets/img/fox2.jpg" class="aboutImg">
-                </div>
-                <!-- quote 3 -->
-                <div class="aboutSwitch3 aboutHover">
-                    <div class="quote quote3">
-                        <p>It's an energy field created by all living things. It surrounds us and penetrates us. It binds the galaxy together.</p>
-                        <p>Obi-Wan Kenobi</p>                        
-                    </div>
-                    <img src="assets/img/bison.jpg" class="aboutImg">
-                </div>
-                <!-- nav sections left side -->
-                <nav class="aboutNav">
-                    <a href="#about" class="btnLeft aboutNavBtn">About</a>
-                    <a href="#portfolio" class="aboutNavBtn">Portfolio</a>
-                    <a href="#contact" class="btnRight aboutNavBtn">Contact</a>
-                </nav>
-            </div>
-            <!-- text section. links to script.js -->
-            <div class="aboutText">
-                <div class="aboutTextNav">
-                    <button id="aboutMeBtn">About Me</button>
-                    <button id="techSkills">Tech Skills</button>
-                    <button id="socialSkills">Creative Process</button>
-                </div>
-                <div class="aboutTextBox">
-                    <!-- text appears here -->
-                </div>
-            </div>
-        </div>
-
+  <body>
+      
+      <header  class="section-wrapper">
+          <nav class="main-nav">
+              <ul>
+                  <li><a href="#">About</a></li> 
+                  <li><a href="#">Portfolio</a></li> 
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>        
+        <h1>Matt Roger</h1>        
+    </header>
+    <section  class="section-wrapper about">
+        about
+        <nav class="section-nav"> 
+            <ul>
+                <li><a href="#">About Me</a></li> 
+                <li><a href="#">Tech Skill</a></li> 
+                <li><a href="#">Creative Process</a></li>
+            </ul>
+        </nav>
     </section>
-    <!-- portfolio -->
-    <section id="portfolio">
-        <div class="wrapper">
-            <h2 class="portfolioHeadText text-effect">Portfolio</h2>
-            <img src="assets/img/portfolio.jpg" class="portfolioHeadImg full">
-            <img src="assets/img/portfolioM.jpg" class="portfolioHeadImg mobile">
-            <!-- nav bar -->
-            <div class="buttonGroup">
-                <!-- groupProjects.js creates content -->
-                <button id="portBtn1"><a href="#mainContent">Group Projects</a></button>
-                <!-- solo.js creates content -->
-                <button id="portBtn2"><a href="#mainContent">Solo Projects</a></button>
-                <!-- mailchimp.js creates content -->
-                <button id="portBtn3"><a href="#mainContent">Success With MailChimp</a></button>
-            </div>
+    <section  class="section-wrapper portfolio">
+        Portfolio
+        <nav class="section-nav"> 
+            <ul>
+                <li><a href="#">About Me</a></li> 
+                <li><a href="#">Tech Skill</a></li> 
+                <li><a href="#">Creative Process</a></li>
+            </ul>
+        </nav>
         
-            <div class="portGroup" id="mainContent"></div>
-        </div>
+      </div>
+      <div class="portfolio-buttons">
+        <button class="solo-project-button">Solo Projects</button>
+      </div>
+      <div class="portfolio-container">
+        
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <!-- add background img -->
+              <div class="flip-card-front">
+                <h2 class="card-banner">Card Title</h2>
+              </div>
+              <div class="flip-card-back">
+                <h2 class="project_name">John Doe</h2> 
+                <div class="about-text">
+
+                </div>
+                <div class="buttons">
+                    <button>See it Live!</button>
+                    <button>Read the ReadMe!</button>
+                    <button>See The Code!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
     </section>
-    <section id="contact">
-        <div class="wrapper">
-            <img src="assets/img/contact.jpg" class="contactImg full">
-            <img src="assets/img/contactM.jpg" class="contactImg mobile">
-            <div class="contactInfo">
-                <!-- data-clipboard-text uses clipboard.js library to copy text to clip board -->
-                <button class="btn hoverColor" id="emailBtn" data-clipboard-text="mattroger.webdev@gmail.com">
-                    <i class="far fa-envelope"></i>
-                    Email: <br>
-                    Mattroger.webdev@gmail.com
-                </button>
-                <a href="https://www.linkedin.com/in/matt-roger/">
-                    <button class="hoverColor">
-                        <i class="fab fa-linkedin">
-                        </i>
-                        LinkedIn
-                    </button>
-                </a>
-                <a href="https://github.com/MattRoger">
-                    <button class="hoverColor">
-                        <i class="fab fa-github">
-                        </i>
-                        GitHub
-                    </button>
-                </a>
-
-
-            </div>
-            <div>
-                <!-- creates a message window with -->
-                <button class="messageBtn hoverColor">
-                    <i class="far fa-comment-alt"> </i>
-                    Send Me A Message
-                </button>
-            </div>
-            <div class="contactFormWrapper">
-                <form action="https://formspree.io/xoqjqqze" method="POST">
-                    <div class="inputWrapper">
-                        <div class="inputGroup">
-                            <label for="email">Name</label>
-                            <input type="text" id="email" name="name" placeholder="name">
-
-                        </div>
-                        <div class="inputGroup">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="_replyto" placeholder="Enter your Email">
-                        </div>
-                    </div>
-                    <textarea id="message" name="subject" placeholder="Your message here..."></textarea>
-                    <input class="submit contactBtnBar btnColor" type="submit" value="submit">
-                </form>
-                <div class="contactBtnBar">
-                    <button class="closeContact btnColor">Maybe later...?</button> </div>
-            </div>
-        </div>
+    <section  class="section-wrapper contact">
+        Contact
     </section>
     <footer>
-        <div>
-            <img src="assets/img/footer.jpg">            
-                          
-        </div>
+
     </footer>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/contact.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
     <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/solo.js "></script>
+    
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/mailchimp.js"></script>
     <script src="assets/js/groupProjects.js"></script>
-    <script src="assets/js/solo.js"></script>
-
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
