@@ -3,23 +3,28 @@
          console.log("solo loaded")
         const catalog = [
             new Project(
+                "solo-projects",
                 "Pokemon Fire, Grass, Water",
                 "A Take on Rock, Paper, Scissors. Featuring Pokemon.",
                 "https://mattroger.github.io/pokemonRPS/",
                 "https://github.com/MattRoger/pokemonrps",
+                "https://github.com/MattRoger/pokemonrps",
                 "assets/img/portfolio/pokemonFGW.PNG",
-                ["JavaScript", "jQuery", "CSS", "HTML"]
+               ["JavaScript", "jQuery","CSS", "HTML"],
+               
             ),
             new Project(
+                "solo-projects",
                 "DarkRoom Printing",
                 "A single mobile responsive page for a local darkroom printer.",
                 "https://mattroger.github.io/DarkRoom/",
                 "https://github.com/MattRoger/darkroom",
                 "https://github.com/MattRoger/darkroom",
                 "assets/img/portfolio/darkroom.png",
-                ["JavaScript, jQuery, Bootstrap, CSS, HTML"],
+                ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
             ),
             new Project(
+                "solo-projects",
                 "Visit South Park",
                 "A single mobile responsive tourism page for the fictional town of South Park",
                 "https://mattroger.github.io/visitsouthpark/",
@@ -29,6 +34,7 @@
                 ["CSS, HTML"],
             ),
             new Project(
+                "solo-projects",
                 "Colorado Clicky Game",
                 "A game that tests the user’s memory.",
                 "https://clickygame9999.herokuapp.com/",
@@ -36,8 +42,10 @@
                 "https://github.com/MattRoger/workingClicky",
                 "assets/img/portfolio/clickygame.PNG",
                 ["React, Styled Components, Reactstrap"],
+                
                 ),
             new Project(
+                "solo-projects",
                 "Sci-Fi Friend Finder",
                 "A web app for finding your sci-fi companion.",
                 "https://evening-sea-45437.herokuapp.com/",
@@ -47,6 +55,7 @@
                 "[Node.js, Express, JavaScript, CSS, HTML]",
             ),
             new Project(
+                "solo-projects",
                 "Star Wars Trivia",
                 "A timed trivia game that ranks the user’s Star Wars knowledge.",
                 "https://mattroger.github.io/triviaGame/",
@@ -55,7 +64,8 @@
                 "assets/img/portfolio/starwarstrivia.PNG",
                 "[JavaScript, jQuery, CSS, HTML]",
                 ),
-            new Project(
+                new Project(
+                "solo-projects",
                 "Liri Bot",
                 "Liri bot is a node search tool for Omdb API, bandsInTown api, and spotify.",
                 "https://github.com/MattRoger/Liri/blob/master/README.md",
@@ -65,6 +75,7 @@
                 "[JavaScript, Node.js, APIs]",
                 ),
             new Project(
+                "solo-projects",
                 "7 Deadly Sins Giphy Generator",
                 "A 7 Deadly Sins gif generator that allows users to play gifs or add their own sins.",
                 "https://mattroger.github.io/giphyGen/",
@@ -74,6 +85,7 @@
                 "[JavaScript, jQuery, Giphy API, CSS, HTML]",
                 ),
                 new Project(
+                    "solo-projects",
                     "Kalaxian Crystals",
                     "Reach a randomly generated target value by using four crystals with random values.",
                     "https://mattroger.github.io/crystalGuessGame/",
@@ -83,6 +95,7 @@
                     "[JavaScript, jQuery, CSS, HTML]",
                     ),
                     new Project(
+                        "solo-projects",
                         "Psychic Game",
                         "A game where the computer generates a random letter for the player to guess.",
                         "https://mattroger.github.io/psychic-game/",

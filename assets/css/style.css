@@ -1,3 +1,7 @@
+body{
+  position: relative;
+}
+
 .section-wrapper{
   height: 100vh;
 }
@@ -18,10 +22,16 @@ header{
 footer{
   background-color: lightslategrey;
 }
+/* nav */
 
-h1{
 
-  
+/* nav */
+.main-nav{
+  position: fixed;
+  bottom: 0;
+  background-color: lightgrey;
+  width:100%;
+  text-align: center;
 }
 
 /* portfolio card */
@@ -43,7 +53,7 @@ h1{
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(540deg);
 }
 
 .flip-card-front, .flip-card-back {

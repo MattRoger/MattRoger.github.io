@@ -31,76 +31,56 @@
   <body>
       
       <header  class="section-wrapper">
-          <nav class="main-nav">
-              <ul>
-                  <li><a href="#">About</a></li> 
-                  <li><a href="#">Portfolio</a></li> 
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </nav>        
+        
         <h1>Matt Roger</h1>        
     </header>
     <section  class="section-wrapper about">
-        about
-        <nav class="section-nav"> 
-            <ul>
-                <li><a href="#">About Me</a></li> 
-                <li><a href="#">Tech Skill</a></li> 
-                <li><a href="#">Creative Process</a></li>
-            </ul>
+        <nav class="section-nav">             
+          <button class="about-me-button about-button">About Me</button>
+          <button class="tech-skills-button about-button">Tech Skills</button>
+          <button class="creative-process-button about-button">Creative Process</button>   
+          <div class="about-container"></div> 
+          <div class="tech-container"></div> 
+          <div class="creative-container"></div> 
         </nav>
     </section>
     <section  class="section-wrapper portfolio">
         Portfolio
-        <nav class="section-nav"> 
-            <ul>
-                <li><a href="#">About Me</a></li> 
-                <li><a href="#">Tech Skill</a></li> 
-                <li><a href="#">Creative Process</a></li>
-            </ul>
-        </nav>
-        
+            
       </div>
       <div class="portfolio-buttons">
         <button class="solo-project-button">Solo Projects</button>
       </div>
       <div class="portfolio-container">
+        <div class="solo-projects"></div>
+        <div class="group-projects"></div>
+        <div class="mail-chimp-projects"></div>
+      </div>
+
         
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <!-- add background img -->
-              <div class="flip-card-front">
-                <h2 class="card-banner">Card Title</h2>
-              </div>
-              <div class="flip-card-back">
-                <h2 class="project_name">John Doe</h2> 
-                <div class="about-text">
-
-                </div>
-                <div class="buttons">
-                    <button>See it Live!</button>
-                    <button>Read the ReadMe!</button>
-                    <button>See The Code!</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
 
     </section>
     <section  class="section-wrapper contact">
-        Contact
+      Contact
     </section>
     <footer>
-
+      
     </footer>
+    <nav class="main-nav">
+      <ul>
+          <li><a href="#">About</a></li> 
+          <li><a href="#">Portfolio</a></li> 
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>        
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
     <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/solo.js "></script>
+    <script src="assets/js/about.js "></script>
     
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/mailchimp.js"></script>
