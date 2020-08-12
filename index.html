@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/mailchimp.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" /> 
     <link
       href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato&family=Stint+Ultra+Expanded&display=swap"
       rel="stylesheet"
@@ -34,7 +34,8 @@
       <h1
         class="typewrite h1_title"
         data-period="2000"
-        data-type='[ "Web Developer", "Photographer", "Artist","Photoshop Wizard","Jedi Knight" ]'>
+        data-type='[ "Web Developer", "Photographer", "Artist","Photoshop Wizard","Jedi Knight" ]'
+      >
         <span class="wrap"></span>
       </h1>
     </header>
@@ -87,16 +88,16 @@
         <div class="portfolio-container">
           <div class="solo-projects"></div>
           <div class="group-projects"></div>
-        <!-- start of mailchimp -->
+          <!-- start of mailchimp -->
           <div class="mail-chimp-projects">
             <div class="mailchimp-nav">
               <p class="history">History & Photography</p>
               <p class="guides">How to Guides</p>
               <p class="contest">Photography Contest</p>
               <p class="sales">Sales</p>
-          </div>
-          <div class="mailchimp-project-container"></div>
             </div>
+            <div class="mailchimp-project-container"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -109,7 +110,8 @@
           <button
             class="email-btn btn tooltip"
             id="my-email"
-            data-clipboard-text="mattroger.webdev@gmail.com">
+            data-clipboard-text="mattroger.webdev@gmail.com"
+          >
             <img class="icon" src="assets/img/icons/icons8-email-100.png" />
             <p>
               Email me:<span class="email"> MattRoger.webdev@gmail.com</span>
@@ -120,12 +122,18 @@
           <div class="contact-links">
             <div>
               <img
-                class="icon" src="./assets/img/icons/icons8-linkedin-100.png" />
-              <a href="https://www.linkedin.com/in/matt-roger/" target="_blank">Find me on LinkedIn</a>
+                class="icon"
+                src="./assets/img/icons/icons8-linkedin-100.png"
+              />
+              <a href="https://www.linkedin.com/in/matt-roger/" target="_blank"
+                >Find me on LinkedIn</a
+              >
             </div>
             <div>
               <img class="icon" src="./assets/img/icons/git-hub-logo.png" />
-              <a href="https://github.com/MattRoger" target="_blank" >See my Github page</a>
+              <a href="https://github.com/MattRoger" target="_blank"
+                >See my Github page</a
+              >
             </div>
           </div>
           <!-- button that opens contact form -->
@@ -170,14 +178,21 @@
                 required
               ></textarea>
               <button class="form-submit contact-button">Send</button>
-            
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-links">
+        <a href="https://github.com/MattRoger/MattRoger.github.io" target="_blank"><p>The Repository</p></a>
+        <p>and</p>
+        <a href="https://github.com/MattRoger/MattRoger.github.io/blob/master/README.md" target="_blank"><p>The Readme for this site</p></a>
+      </div>
+      <div class="random-quote"></div>
+      <div class="filler"></div>
+    </footer>
 
     <script
       type="text/javascript"
@@ -194,14 +209,14 @@
       })();
     </script>
 
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/solo.js "></script>
+    <script src="assets/js/groupProjects.js"></script>
+    <script src="assets/js/mailchimp.js"></script>
     <script src="assets/js/about.js "></script>
     <script src="assets/js/header.js "></script>
 
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/js/mailchimp.js"></script>
-    <script src="assets/js/groupProjects.js"></script>
-    <script src="assets/js/script.js"></script>
   </body>
 </html>

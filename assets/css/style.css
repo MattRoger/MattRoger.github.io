@@ -4,6 +4,7 @@ body{
   /* position: relative; */
   height: 100vh;
   overflow: auto;
+  background-color: #94BA8C;
 }
 
 .section-wrapper{
