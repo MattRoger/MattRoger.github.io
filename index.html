@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Matt Roger Web Developer</title>
+    <title>Matt Roger | Web Developer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" /> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/mailchimp.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />  -->
     <link
-      href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Courgette|Delius|Gentium+Book+Basic|Heebo|Pirata+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato&family=Stint+Ultra+Expanded&display=swap"
       rel="stylesheet"
     />
 
@@ -22,66 +24,181 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/e85b486770.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
+  <!--some icons from icon8.com href="https://icons8.com/">-->
 
   <body>
-      
-      <header  class="section-wrapper">
-        
-        <h1>Matt Roger</h1>        
+    <!-- header -->
+    <header class="section-wrapper intro">
+      <h1 class="h1_name">Matt Roger</h1>
+      <h1
+        class="typewrite h1_title"
+        data-period="2000"
+        data-type='[ "Web Developer", "Photographer", "Artist","Photoshop Wizard","Jedi Knight" ]'>
+        <span class="wrap"></span>
+      </h1>
     </header>
-    <section  class="section-wrapper about">
-        <nav class="section-nav">             
-          <button class="about-me-button about-button">About Me</button>
-          <button class="tech-skills-button about-button">Tech Skills</button>
-          <button class="creative-process-button about-button">Creative Process</button>   
-          <div class="about-container"></div> 
-          <div class="tech-container"></div> 
-          <div class="creative-container"></div> 
-        </nav>
-    </section>
-    <section  class="section-wrapper portfolio">
-        Portfolio
-            
-      </div>
-      <div class="portfolio-buttons">
-        <button class="solo-project-button">Solo Projects</button>
-      </div>
-      <div class="portfolio-container">
-        <div class="solo-projects"></div>
-        <div class="group-projects"></div>
-        <div class="mail-chimp-projects"></div>
-      </div>
-
-        
-
-
-    </section>
-    <section  class="section-wrapper contact">
-      Contact
-    </section>
-    <footer>
-      
-    </footer>
+    <!-- main nav -->
     <nav class="main-nav">
       <ul>
-          <li><a href="#">About</a></li> 
-          <li><a href="#">Portfolio</a></li> 
-          <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="middle-button"><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-  </nav>        
+    </nav>
+    <!-- start of  about -->
+    <section id="about" class="section-wrapper about">
+      <!-- about nav -->
+      <nav class="section-nav about-nav">
+        <p class="about-me-link">About Me</p>
+        <p class="tech-skills-link">Tech Skills</p>
+        <p class="creative-process-link">Creative Process</p>
+      </nav>
+      <div class="about-container"></div>
+      <!-- skills list. js appends the ul for each skill category -->
+      <div class="tech-container">
+        <div class="skills-wrapper">
+          <div class="skills-list skills-intro">
+            <h3>The Skills That Pay The Bills</h3>
+            <p>
+              "You can never learn to many skills. Here are some of the many
+              tools in my tool box. I am a wizard in with Adobe Photoshop and I
+              use those skills to enhance my front-end designs using CSS and
+              JavaScript."
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- creative process appended here -->
+      <div class="creative-container"></div>
+    </section>
+    <!-- Star of portfolio div -->
+    <section id="portfolio" class="section-wrapper portfolio">
+      <div class="portfolio-wrapper">
+        <!--portfolio nav. wrapper added for style padding -->
+        <div class="portfolio-nav-wrapper" id="portfolio_nav">
+          <div class="portfolio-nav section-nav">
+            <p class="solo-project-link portfolio-link">Solo Projects</p>
+            <p class="group-project-link portfolio-link">Group Projects</p>
+            <p class="mail-project-link portfolio-link">Mail Chimp Projects</p>
+          </div>
+        </div>
+        <!-- This is where the js injects the html for the projects -->
+        <div class="portfolio-container">
+          <div class="solo-projects"></div>
+          <div class="group-projects"></div>
+        <!-- start of mailchimp -->
+          <div class="mail-chimp-projects">
+            <div class="mailchimp-nav">
+              <p class="history">History & Photography</p>
+              <p class="guides">How to Guides</p>
+              <p class="contest">Photography Contest</p>
+              <p class="sales">Sales</p>
+          </div>
+          <div class="mailchimp-project-container"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Start of contact -->
+    <section id="contact" class="section-wrapper contact">
+      <div class="contact-wrapper">
+        <div class=""></div>
+        <div class="contact-details">
+          <!--button uses clipboardJS npm to copy text to users clipboard and tool tip to let the user know   -->
+          <button
+            class="email-btn btn tooltip"
+            id="my-email"
+            data-clipboard-text="mattroger.webdev@gmail.com">
+            <img class="icon" src="assets/img/icons/icons8-email-100.png" />
+            <p>
+              Email me:<span class="email"> MattRoger.webdev@gmail.com</span>
+            </p>
+            <span class="tooltiptext">Click to copy my Email</span>
+          </button>
+          <!--Linked in and github links -->
+          <div class="contact-links">
+            <div>
+              <img
+                class="icon" src="./assets/img/icons/icons8-linkedin-100.png" />
+              <a href="https://www.linkedin.com/in/matt-roger/" target="_blank">Find me on LinkedIn</a>
+            </div>
+            <div>
+              <img class="icon" src="./assets/img/icons/git-hub-logo.png" />
+              <a href="https://github.com/MattRoger" target="_blank" >See my Github page</a>
+            </div>
+          </div>
+          <!-- button that opens contact form -->
+          <button class="contact-form-button contact-button">
+            <p>Send me a message</p>
+            <img
+              class="icon"
+              src="assets/img/icons/icons8-paper-plane-100.png"
+            />
+          </button>
+        </div>
+
+        <!-- Contact fom div -->
+        <div class="contact-form-modal">
+          <div class="modal-wrapper">
+            <button class="close-modal contact-button">X</button>
+            <form id="myform" class="contact-form">
+              <input type="hidden" name="contact_number" />
+              <label class="contact-form-item" for="user_name">Name</label>
+              <input
+                class="contact-form-item"
+                type="text"
+                name="user_name"
+                placeholder="Your name.."
+              />
+
+              <label for="user_email" class="contact-form-item">Email</label>
+              <input
+                class="contact-form-item"
+                type="email"
+                placeholder="Enter Email"
+                name="user_email"
+                required
+              />
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write something.."
+                style="height: 200px;"
+                required
+              ></textarea>
+              <button class="form-submit contact-button">Send</button>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_pXZXP2XFVL4FtryWCJWg1");
+      })();
+    </script>
+
     <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/solo.js "></script>
     <script src="assets/js/about.js "></script>
-    
+    <script src="assets/js/header.js "></script>
+
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/mailchimp.js"></script>
     <script src="assets/js/groupProjects.js"></script>

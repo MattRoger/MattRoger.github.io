@@ -1,0 +1,150 @@
+.portfolio {
+  background-color: #f0f0c9;
+  /* position: relative; */
+}
+
+.group-projects,
+.solo-projects {
+  margin: 0;
+}
+
+.project-name {
+  font-size: 1.25rem;
+}
+
+/* portfolio card */
+.flip-card {
+  position: relative;
+  background-color: transparent;
+  background-size: fill;
+  width: 85%;
+  height: 220px;
+  perspective: 1000px;
+  margin: 3rem auto;
+  box-sizing: border-box;
+}
+
+.flip-card-inner {
+  box-sizing: border-box;
+  margin: auto;
+  border: 0.5rem solid#0C8346;
+  border-radius: 5%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  -webkit-box-shadow: 10px 14px 14px -10px rgba(0,0,0,0.51);
+  -moz-box-shadow: 10px 14px 14px -10px rgba(0,0,0,0.51);
+  box-shadow: 10px 14px 14px -10px rgba(0,0,0,0.51);
+  animation-timing-function: ease-in-out;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(540deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-size: cover;
+}
+
+
+.flip-card-back {
+  background-color: #091834;
+  transform: rotateY(-180deg);
+}
+
+.card-banner {
+  background-color: #0c8346;
+  position: fixed;
+  bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+  color: #f0f0c9;
+  padding: 0.25rem;
+}
+.flip-card p,
+.flip-card li,
+.flip-card a {
+  color: #fbfbef;
+  font-size: 1rem;
+}
+.flip-card p,
+.flip-card a {
+  padding: 0.25em;
+}
+
+.flip-card li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.project-name {
+  padding-top: 0.5rem;
+}
+.tech-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-links a:hover {
+  color: #0c8346;
+}
+
+.project-links a {
+  padding: 1rem;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .group-projects,
+  .solo-projects {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flip-card {
+    width: 30rem;
+    height: 18rem;
+  }
+  .card-banner {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .flip-card p,
+  .flip-card li,
+  .flip-card a {
+    font-size: 1.25rem;
+  }
+  .project-name {
+    font-size: 2rem;
+    padding-top: .75rem;
+    padding-bottom: 1.25rem;
+  }
+  .about-project-text{
+    width: 80%;
+    margin: auto;
+  }
+  .tech-list {
+    padding-top: 0.35rem;
+  }
+  .project-links a {
+    padding: 1rem;
+  }
+  .project-links {
+    margin-top: 1.5rem;;
+
+  }
+}

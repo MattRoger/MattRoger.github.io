@@ -1,5 +1,15 @@
+$(document).ready(function() {
+    load_creative_process()
+    load_skills();
+    create_about_me();
+    $(".creative-container").hide()
+    $(".tech-container").hide()
+
+})
+
+
 // about text
-const aboutTextP1 = 'A University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.'
+const aboutTextP1 = '  A University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.'
 const aboutTextP2 = 'I am currently the lab/social media manager at Denver Pro Photo. My responsibilities include, providing high-quality lab services, managing the store’s website, and fostering business by creating sales and mass email campaigns to bring customers into the store.'
 const aboutTextP3 = 'Creating graphics and layouts for promotions really helped add clarity and flair to my front-end developing skills. Now, in Photoshop, instead of editing photos, I spend most of my time creating web page layouts. There I can easily adjust colors and element placement to create dazzling styling and coherent framework.' 
 const aboutTextP4 = 'As I transition from my career in photography into a career in coding, I am looking for a company that will help me grow my skills as a web developer, but that will also value my past experience in the art world.'
@@ -15,10 +25,12 @@ const create_about_me=()=>{
     const p2 = $("<p>").text(aboutTextP2);
     const p3 = $("<p>").text(aboutTextP3);
     const p4 = $("<p>").text(aboutTextP4);
-    const a1 = $("<a>").attr("href",linkedIn).attr("target", "_blank").text("LinkedIn")
-    const a2 = $("<a>").attr("href",github).attr("target", "_blank").text("Github")
-    const a3 = $("<a>").attr("href",photo).attr("target", "_blank").text("Photo")
-    text_div.append(p1, p2, p3, p4, a1, a2, a3);
+    const links = $("<div>").addClass("about-links");
+    const a1 = $("<a>").attr("href",linkedIn).attr("target", "_blank").text("LinkedIn");
+    const a2 = $("<a>").attr("href",github).attr("target", "_blank").text("Github");
+    const a3 = $("<a>").attr("href",photo).attr("target", "_blank").text("Photo");
+    links.append( a1, a2, a3);
+    text_div.append(p1, p2, p3, p4, links);
     about_wrapper.append(about_image ,text_div);
     $(".about-container").append(about_wrapper);
 }
@@ -27,15 +39,15 @@ const create_about_me=()=>{
 
 const languages=["HTML", "CSS", "JavaScript", "PHP", "Sql", "TypeScript"];
 const frameworks=["Bootstrap","Reactstrap", "Express"];
-const environments=["Node.js"];
-const databases =["MySQL","Sequelize","MongoDB","Mongoose","Firebase"];
+// const environments=["Node.js"];
 const libraries=["jQuery", "React"];
-const compilers=["Pug.js"];
-const webdev=["Styled-Components","NPMs","Responsive Web Design", "Angular", "Adobe Photoshop"];
+const databases =["MySQL","Sequelize","MongoDB","Mongoose","Firebase"];
+// const compilers=["Pug.js"];
+const webdev=["Node.js", "Pug.js","Styled-Components","NPMs","Responsive Web Design", "Angular", "Adobe Photoshop"];
 const other_skills=["Photography"," Mass Email Marketing","Social Media Marketing", "Adobe Lightroom", "Team Leadership" ,"Trello Boards", "Time Management"];
 
 const make_list = (heading, section) =>{
-    const div = $("<div>").addClass("skills-list");
+    const div = $("<div>").addClass(`skills-list`);
     const head=$("<h3>").text(heading);
     
     const ul = $("<ul>");
@@ -44,22 +56,22 @@ const make_list = (heading, section) =>{
         ul.append(li);
     }
     div.append(head, ul);
-    $(".tech-container").append(div);
+    $(".skills-wrapper").append(div);
 }
-const load_skills = () => {    
-    make_list("Languages", languages);
-    make_list("Frameworks", frameworks);
-    make_list("Environments",environments);
-    make_list("Database", databases);
-    make_list("Libraries", libraries);
-    make_list("compilers", compilers);
-    make_list("Web Development", webdev);
-    make_list("Other Great Skills",other_skills);
+const load_skills = () => {  
+        make_list("Languages", languages),
+        make_list("Frameworks", frameworks),
+        // make_list("Environments",environments),
+        make_list("Database", databases),
+        make_list("Libraries", libraries),
+        // make_list("compilers", compilers),
+        make_list("Web Development", webdev),
+        make_list("Other Great Skills",other_skills)
 }
 // creative process
 
 const load_creative_process = ()=>{
-const div = $("<div>").addClass("creative-process");
+const div = $("<div>").addClass("creative-process about-wrapper");
 const creative_opening =$("<p>").text(
      'I strive for clean and organized code so I can work more effectively. I thrive in front-end positions, There I can use my coding skills and my visual arts background and create a unique and memorable user experiences.');
 const list_items=[
@@ -83,26 +95,23 @@ $(".creative-container").append(div);
 
 // button functions
 
-$(".about-me-button").on("click", function(){
-    $(".about-container").show()
+$(".about-me-link").on("click", function(){
+    $(".about-container").fadeIn("slow")
     $(".tech-container").hide()
     $(".creative-container").hide()
-    create_about_me();
     
 })
-$(".tech-skills-button").on("click", function(){
-    $(".tech-container").show()
+$(".tech-skills-link").on("click", function(){
+    $(".tech-container").fadeIn("slow")
     $(".creative-container").hide()
     $(".about-container").hide()
-    load_skills();
     
     
 })
-$(".creative-process-button").on("click", function(){
-    $(".creative-container").show()
+$(".creative-process-link").on("click", function(){
+    $(".creative-container").fadeIn("slow")
     $(".tech-container").hide()
     $(".about-container").hide()
-    load_creative_process()
-console.log("creative clicked")
+    
+})
 
-})

@@ -1,0 +1,136 @@
+.about {
+  background-color: #091834;
+}
+.about-wrapper,
+.tech-container,
+.creative-container {
+  width: 85%;
+  padding: 1rem;
+  margin: auto;
+  position: relative;
+}
+
+.about-wrapper {
+  overflow: hidden;
+  padding: 0;
+  border: 4px solid #0c8346;
+  background-color: #f0f0c9;
+  border-radius: 3%;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  padding: 0.35rem 0.75rem;
+}
+.creative-process li,
+.about-wrapper p,
+.about ul,
+.about a {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+.about-links {
+  padding: 0.5rem;
+  text-align: center;
+}
+.about-links a {
+  font-family: "Didact Gothic", sans-serif;
+  padding: 1.5rem;
+}
+.about-links a:hover {
+  color: #0c8346;
+}
+
+.about img {
+  box-sizing: border-box;
+  width: 175px;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  float: left;
+  border: 0.5rem solid #0c8346;
+  margin-top: 0.35rem;
+  margin-left: -2.25rem;
+  margin-right: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.skills-list h3 {
+  font-size: 2rem;
+}
+.skills-list {
+  margin: 2rem;
+  padding: 0.75rem;
+  background-color: #f0f0c9;
+}
+.skills-list ul {
+  padding-bottom: 0.5rem;
+  margin: 1rem;
+}
+
+/* creative process */
+
+.creative-container li {
+  list-style-image: url("../img/icons/icons8-unchecked-checkbox-20.png");
+  list-style-position: outside;
+  padding: 0.25rem;
+  margin-left: 2rem;
+}
+.creative-container li:hover {
+  list-style-image: url("../img/icons/icons8-tick-box-20.png");
+}
+
+/* full screen */
+@media only screen and (min-width: 600px) {
+  .about-wrapper {
+    width: 55%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  .creative-process p,
+  .about-text p,
+  .about li,
+  .skills-intro p {
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+  }
+ 
+  .about img {
+    width: 20rem;
+    margin-left: -4rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .about-text {
+    margin-left: 5rem;
+  }
+  .about p {
+    margin-bottom: 1.25rem;
+  }
+  .group-project-link,
+  .tech-skills-link {
+    border-left: 2px solid #f0f0c9;
+    border-right: 2px solid #f0f0c9;
+  }
+  .about-links a {
+    font-size: 2rem;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills-list {
+    padding: 1rem;
+    list-style-position: inside;
+    border: 2px solid #0c8346;
+  }
+  .skills-list ul {
+    padding-top: 0.75rem;
+  }
+  .skills-intro {
+    width: 30%;
+  }
+  .skills-intro p {
+    padding-top: 0.75rem;
+  }
+}

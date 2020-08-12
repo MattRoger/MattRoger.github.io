@@ -57,110 +57,164 @@ const  sales= [{
 },
 ]
 
-$("#portBtn3").on("click", function () {
-    console.log("click")
-    loadMCProjects();
+$(document).ready(function () {
+    mailchimp_card(history, "history_div")
+    mailchimp_card(guides, "guides_div")
+    mailchimp_card(sales, "sales_div")
+    mailchimp_card(contest, "contest_div")
+    $(".mail-chimp-projects").hide();
+    $(".guides_div").hide();
+    $(".sales_div").hide();
+    $(".contest_div").hide();
+  });
+
+$(".mail-project-link ").on("click", function(){
+    $(".mail-chimp-projects").fadeIn("slow");
+    $(".group-projects").hide();
+    $(".solo-projects").hide();
+})
+$(".history").on("click", function(){
+    $(".history_div").fadeIn("slow")
+    $(".guides_div").hide();
+    $(".sales_div").hide();
+    $(".contest_div").hide();
+})
+$(".guides").on("click", function(){
+    $(".guides_div").fadeIn("slow");
+    $(".history_div").hide()
+    $(".sales_div").hide();
+    $(".contest_div").hide();
+})
+$(".sales").on("click", function(){
+    $(".sales_div").fadeIn("slow");
+    $(".guides_div").hide();
+    $(".history_div").hide()
+    $(".contest_div").hide();
+})
+$(".contest").on("click", function(){
+    $(".contest_div").fadeIn("slow");
+    $(".sales_div").hide();
+    $(".guides_div").hide();
+    $(".history_div").hide()
 })
 
+const mailchimp_card= (category, div_name)=>{
+    for(let i = 0;i<category.length;i++){
+        console.log("here")
+        const name = category[i].name;
+        const link = category[i].link;
+        const image =  category[i].image;
+        const mailchimp_item_wrapper=$("<div>").addClass(`mailchimp-item-wrapper`);
+        mailchimp_item_wrapper.addClass(div_name);
+        const a = $("<a>").attr("href", link).attr("target", "_blank");
+        const img =$("<img>").attr("src", image);
+        const h2 = $("<h2>").text(name);
+        a.append(img, h2)
+        mailchimp_item_wrapper.append(a);
+        $(".mailchimp-project-container").append(mailchimp_item_wrapper);
+    }
+}
 
 
-function loadMCProjects() {
-    console.log("click")
-    $(".portGroup").empty();
-    $(".buttonGroup").css("position", "sticky");
-    $(".buttonGroup").css("bottom", "initial");
-    $(".buttonGroup").css("top", "0");
-    $(".buttonGroup").css("font-size", ".5em");
-    $(".buttonGroup").addClass("buttonGroupMobile")
 
 
-    const footer = $("<div>").addClass("mainNav");
-    const about = $("<a>").attr("href", "#about");
-    const portfolio = $("<a>").attr("href", "#portfolio");
-    const contact = $("<a>").attr("href", "#contact");
-    about.text("About");
-    portfolio.text("Portfolio");
-    contact.text("Contact");
-    footer.append(about, portfolio, contact);    
-    const projectOuterWrapper = $("<div>");
-    projectOuterWrapper.addClass("projectWrapperMC");
+// function loadMCProjects() {
+//     console.log("click")
+//     $(".portGroup").empty();
+//     $(".buttonGroup").css("position", "sticky");
+//     $(".buttonGroup").css("bottom", "initial");
+//     $(".buttonGroup").css("top", "0");
+//     $(".buttonGroup").css("font-size", ".5em");
+//     $(".buttonGroup").addClass("buttonGroupMobile")
+
+
+//     const footer = $("<div>").addClass("mainNav");
+//     const about = $("<a>").attr("href", "#about");
+//     const portfolio = $("<a>").attr("href", "#portfolio");
+//     const contact = $("<a>").attr("href", "#contact");
+//     about.text("About");
+//     portfolio.text("Portfolio");
+//     contact.text("Contact");
+//     footer.append(about, portfolio, contact);    
+//     const projectOuterWrapper = $("<div>");
+//     projectOuterWrapper.addClass("projectWrapperMC");
    
-        const secTitle1=$("<h3>").addClass("secTitle");
-        secTitle1.text("Photographic History");       
-        const projectInnerWrapper1 = $("<div>").addClass("MCWrap");  
-        const projectWrapper1 = $("<div>").addClass("projectGroupWrapper");
-            for (let i = 0; i < history.length; i++) {
-            const project = $("<div>");
-            project.addClass("project").attr("href", history[i].link);
-            const title = $("<a>").attr("href", history[i].link);
-            title.text(history[i].name);
-            title.addClass("projectTitle");
-            const previewImg = $("<img>");
-            previewImg.attr("src", history[i].image);
-            previewImg.attr("href", history[i].link);
-            project.append(title, previewImg);
-            projectWrapper1.append(project);            
-        }
-        projectInnerWrapper1.prepend(secTitle1,projectWrapper1);
-        projectOuterWrapper.append(projectInnerWrapper1);        
+//         const secTitle1=$("<h3>").addClass("secTitle");
+//         secTitle1.text("Photographic History");       
+//         const projectInnerWrapper1 = $("<div>").addClass("MCWrap");  
+//         const projectWrapper1 = $("<div>").addClass("projectGroupWrapper");
+//             for (let i = 0; i < history.length; i++) {
+//             const project = $("<div>");
+//             project.addClass("project").attr("href", history[i].link);
+//             const title = $("<a>").attr("href", history[i].link);
+//             title.text(history[i].name);
+//             title.addClass("projectTitle");
+//             const previewImg = $("<img>");
+//             previewImg.attr("src", history[i].image);
+//             previewImg.attr("href", history[i].link);
+//             project.append(title, previewImg);
+//             projectWrapper1.append(project);            
+//         }
+//         projectInnerWrapper1.prepend(secTitle1,projectWrapper1);
+//         projectOuterWrapper.append(projectInnerWrapper1);        
         
-        const secTitle2=$("<h3>").addClass("secTitle");
-        secTitle2.text("How-To Guides");        
-        const projectInnerWrapper2 = $("<div>").addClass("MCWrap");  
-        const projectWrapper2 = $("<div>").addClass("projectGroupWrapper");
-            for (let i = 0; i < guides.length; i++) {
-            const project = $("<div>");
-            project.addClass("project").attr("href", guides[i].link);
-            const title = $("<a>").attr("href", guides[i].link);
-            title.text(guides[i].name);
-            title.addClass("projectTitle");
-            const previewImg = $("<img>");
-            previewImg.attr("src", guides[i].image);
-            previewImg.attr("href", guides[i].link);
-            project.append(title, previewImg);
-            projectWrapper2.append(project);            
-        }
-        projectInnerWrapper2.prepend(secTitle2,projectWrapper2);
-        projectOuterWrapper.append(projectInnerWrapper2);        
+//         const secTitle2=$("<h3>").addClass("secTitle");
+//         secTitle2.text("How-To Guides");        
+//         const projectInnerWrapper2 = $("<div>").addClass("MCWrap");  
+//         const projectWrapper2 = $("<div>").addClass("projectGroupWrapper");
+//             for (let i = 0; i < guides.length; i++) {
+//             const project = $("<div>");
+//             project.addClass("project").attr("href", guides[i].link);
+//             const title = $("<a>").attr("href", guides[i].link);
+//             title.text(guides[i].name);
+//             title.addClass("projectTitle");
+//             const previewImg = $("<img>");
+//             previewImg.attr("src", guides[i].image);
+//             previewImg.attr("href", guides[i].link);
+//             project.append(title, previewImg);
+//             projectWrapper2.append(project);            
+//         }
+//         projectInnerWrapper2.prepend(secTitle2,projectWrapper2);
+//         projectOuterWrapper.append(projectInnerWrapper2);        
         
-        const secTitle3=$("<h3>").addClass("secTitle");
-        secTitle3.text("Contest");        
-        const projectInnerWrapper3 = $("<div>").addClass("MCWrap");
-        const projectWrapper3 = $("<div>").addClass("projectGroupWrapper");  
-            for (let i = 0; i < contest.length; i++) {
-            const project = $("<div>");
-            project.addClass("project").attr("href", contest[i].link)
-            const title = $("<a>").attr("href", contest[i].link)
-            title.text(contest[i].name);
-            title.addClass("projectTitle");
-            const previewImg = $("<img>");
-            previewImg.attr("src", contest[i].image);
-            previewImg.attr("href", contest[i].link);
-            project.append(title, previewImg);
-            projectWrapper3.append(project);            
-        }
-        projectInnerWrapper3.prepend(secTitle3,projectWrapper3);
-        projectOuterWrapper.append( projectInnerWrapper3);        
+//         const secTitle3=$("<h3>").addClass("secTitle");
+//         secTitle3.text("Contest");        
+//         const projectInnerWrapper3 = $("<div>").addClass("MCWrap");
+//         const projectWrapper3 = $("<div>").addClass("projectGroupWrapper");  
+//             for (let i = 0; i < contest.length; i++) {
+//             const project = $("<div>");
+//             project.addClass("project").attr("href", contest[i].link)
+//             const title = $("<a>").attr("href", contest[i].link)
+//             title.text(contest[i].name);
+//             title.addClass("projectTitle");
+//             const previewImg = $("<img>");
+//             previewImg.attr("src", contest[i].image);
+//             previewImg.attr("href", contest[i].link);
+//             project.append(title, previewImg);
+//             projectWrapper3.append(project);            
+//         }
+//         projectInnerWrapper3.prepend(secTitle3,projectWrapper3);
+//         projectOuterWrapper.append( projectInnerWrapper3);        
        
 
-        const secTitle4=$("<h3>").addClass("secTitle");
-        secTitle4.text("Sales");        
-        const projectInnerWrapper4 = $("<div>").addClass("MCWrap"); 
-        const projectWrapper4 = $("<div>").addClass("projectGroupWrapper"); 
-            for (let i = 0; i < sales.length; i++) {
-            const project = $("<div>");
-            project.addClass("project").attr("href", sales[i].link);
-            const title = $("<a>").attr("href", sales[i].link);
-            title.text(sales[i].name);
-            title.addClass("projectTitle");
-            const previewImg = $("<img>");
-            previewImg.attr("src", sales[i].image);
-            previewImg.attr("href", sales[i].link);
-            project.append(title, previewImg);
-            projectWrapper4.append(project);            
-        }
-        projectInnerWrapper4.prepend(secTitle4,projectWrapper4);
-        projectOuterWrapper.append(projectInnerWrapper4);        
-        $(".portGroup").append(projectOuterWrapper, footer);
+//         const secTitle4=$("<h3>").addClass("secTitle");
+//         secTitle4.text("Sales");        
+//         const projectInnerWrapper4 = $("<div>").addClass("MCWrap"); 
+//         const projectWrapper4 = $("<div>").addClass("projectGroupWrapper"); 
+//             for (let i = 0; i < sales.length; i++) {
+//             const project = $("<div>");
+//             project.addClass("project").attr("href", sales[i].link);
+//             const title = $("<a>").attr("href", sales[i].link);
+//             title.text(sales[i].name);
+//             title.addClass("projectTitle");
+//             const previewImg = $("<img>");
+//             previewImg.attr("src", sales[i].image);
+//             previewImg.attr("href", sales[i].link);
+//             project.append(title, previewImg);
+//             projectWrapper4.append(project);            
+//         }
+//         projectInnerWrapper4.prepend(secTitle4,projectWrapper4);
+//         projectOuterWrapper.append(projectInnerWrapper4);        
+//         $(".portGroup").append(projectOuterWrapper, footer);
     
-}
+// }

@@ -1,0 +1,62 @@
+header {
+  background-color: #0c0920;
+  font-family: "Stint Ultra Expanded", cursive;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.h1_title {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  text-overflow: ellipsis;
+}
+
+.h1_name {
+  margin-top: 6rem;
+  font-size: 4rem;
+  width: auto;
+  margin-top: 10rem;
+  text-align: center;
+
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 3.5s steps(10) 0.25s 1 normal both,
+    blinkTextCursor 500ms steps(10) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: auto;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@media only screen and (min-width: 600px) {
+    .h1_title {
+        font-size: 4.5rem;
+        margin-top: 3rem;
+        text-overflow: ellipsis;
+      }
+      
+      .h1_name {
+        margin-top: 10rem;
+        font-size: 6rem;
+        width: auto;
+        margin-top: 10rem;
+        text-align: center;
+      
+      }
+}

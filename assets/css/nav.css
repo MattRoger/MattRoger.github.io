@@ -1,0 +1,102 @@
+.portfolio-wrapper {
+  position: relative;
+
+}
+
+.section-nav {
+  font-size: 2.5rem;
+  letter-spacing: 0.35rem;
+  text-align: center;
+  cursor: pointer;
+}
+.section-nav p {
+  font-family: "Didact Gothic", sans-serif;
+  padding: 0 2rem;
+  color: #fbfbef;
+}
+.about-nav p:hover {
+  color: #0c8346;
+}
+
+.about-nav {
+  background-color: #091834;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.portfolio-nav p:hover {
+  color:#091834;
+}
+.portfolio-nav-wrapper {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #0c8346;
+  position: sticky;
+  bottom: initial;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+/* main nav */
+
+.main-nav {
+  position: fixed;
+  bottom: 0;
+  background-color: #0c0920;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.main-nav ul {
+  box-sizing: border-box;
+  padding: 1.25rem;
+}
+.main-nav a {
+  font-family: "Didact Gothic", sans-serif;
+  color: #fbfbef;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .about-nav {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .section-nav p {
+    display: inline;
+    font-size: 2.5rem;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+  .main-nav li {
+    display: inline;
+  }
+
+  .main-nav a {
+    font-size: 2.25rem;
+  }
+  .middle-button a {
+    border-left: 4px solid #fbfbef;
+    border-right: 4px solid #fbfbef;
+  }
+  .portfolio-nav-wrapper {
+    z-index: 100;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .group-project-link,
+  .tech-skills-link {
+    border-left: 2px solid #f0f0c9;
+    border-right: 2px solid #f0f0c9;
+  }
+}

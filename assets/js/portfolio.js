@@ -41,26 +41,29 @@ class Project {
         
         const card_back= $("<div>").addClass("flip-card-back");
         const project_name=$("<h2>").addClass("project-name").text(this.title);
-        const about_text = $("<p>").addClass("about-text").text(this.about);
+        const about_text = $("<p>").addClass("about-project-text").text(this.about);
 
         const tech_list=$("<div>").addClass("tech-list");
         const p =$("<p>").text("Built With: ");
         const list =$("<ul>");
         for(let i=0;this.tech.length >i; i++){
-            const li =$("<li>").text(this.tech[i]);
-            list.append(li);
+            const li =$("<li>").text(this.tech[i]);            list.append(li);
         }
         tech_list.append(p, list);
 
         const links_div=$("<div>").addClass("project-links");
         const a1 =$("<a>").addClass("deployed-link").attr("href", this.deployed).attr("target", "_blank").text("Deployed");
         const a2 =$("<a>").addClass("readme-link").attr("href", this.readme).attr("target", "_blank").text("ReadMe");
-        const a3 =$("<a>").addClass("repo-link").attr("href", this.repo).attr("target", "_blank").text("Repo");
+        const a3 =$("<a>").addClass("repo-link").attr("href", this.repo).attr("target", "_blank").text("Github");
         links_div.append(a1,a2,a3);
         card_back.append(project_name,about_text, tech_list, links_div);
         inner_card.append(front_card, card_back);
         flip_card.append(inner_card);
-        $(".solo-projects").append(flip_card)
+        if(this.div_category=='solo-projects'){
+            $(".solo-projects").append(flip_card)
+        }else if (this.div_category=='group-projects'){
+            $(".group-projects").append(flip_card)
+        }
         
     }
     
