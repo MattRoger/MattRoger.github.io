@@ -23,7 +23,6 @@ function getRandomInt(max) {
 }
 const get_random_quote = () => {
   const rand_num = getRandomInt(quotes.length);
-  console.log("rand_num"+rand_num)
   const quote = $("<p>").text(quotes[rand_num].quote);
   const author = $("<p>").text("- " + quotes[rand_num].author);
   const refresh = $("<p>")

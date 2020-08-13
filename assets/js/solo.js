@@ -3,7 +3,6 @@ $(document).ready(function () {
 });
 
 const load_solo_projects = () => {
-  console.log("solo loaded");
   const catalog = [
     new Project(
       "solo-projects",

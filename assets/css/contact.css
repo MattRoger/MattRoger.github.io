@@ -101,7 +101,7 @@ textarea {
     color: #f0f0c9;
     background-color:#0C8346
 }
-.contact-button:hover,
+.contact-button p:hover,
 .contact-button p:hover {
   color: #091834;
 }

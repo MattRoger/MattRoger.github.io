@@ -1,64 +1,75 @@
-
-footer{
-height: 13rem;
-/* background-color: #3581B8; */
-background-color: #94BA8C;
-font-family: "Didact Gothic", sans-serif;
+footer {
+  height: 13rem;
+  /* background-color: #3581B8; */
+  background-color: #94ba8c;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 .footer-links {
-    margin: auto;
-    display: block;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
+  margin: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
 }
-.footer-links p{
-    font-size: .95rem;
-    display: inline;
+.footer-links p {
+  font-size: 0.95rem;
+  display: inline;
 }
 
-.random-quote{
-    margin-top: .5rem;
-    margin-right: 1.5rem;
+.random-quote {
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
 }
-.random-quote p{
-    text-align: right;
+.random-quote p {
+  text-align: right;
 }
-.footer-links a p:hover{
-    color:#fbfbef;
+.footer-links a p:hover {
+  color: #fbfbef;
 }
-.random-quote p:first-of-type{
-    font-style: italic;
+.random-quote p:first-of-type {
+  font-style: italic;
 }
-.random-quote p:last-of-type{
-    padding-top: .5rem;
-    font-size: .75rem;
-    cursor: pointer;
+.random-quote p:last-of-type {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
 }
-.random-quote p:nth-of-type(2){
-    font-size: .95rem;
+.random-quote p:nth-of-type(2) {
+  font-size: 0.95rem;
+}
+.filler {
+  height: 50%;
+}
+footer .icon{
+    display: none;
 }
 @media only screen and (min-width: 600px) {
-    
-.footer-links {
+  .footer-links {
     width: auto;
     float: left;
     margin-left: 2rem;
-    margin-top:.25rem;
-}
-.footer-links p{
+    margin-top: 0.25rem;
+  }
+  .footer-links p {
     text-align: left;
     font-size: 1.5rem;
-}
+    margin: auto;
+    
+  }
 
-.random-quote{
+  .random-quote {
     float: right;
     margin-right: 2rem;
     width: 33%;
+  }
+  .filler {
+    height: 25%;
+  }
+  footer .icon{
+    display: initial;
+    width: 50px;  
+    
 }
-.filler{
-   height:25%;
 
-}
 }

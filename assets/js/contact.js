@@ -1,4 +1,3 @@
-console.log("contact working");
 $("#my-email").on("click", function () {
   alert("Matt's Email Was Copied To Clipboard!");
 });
