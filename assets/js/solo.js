@@ -6,6 +6,16 @@ const load_solo_projects = () => {
   const catalog = [
     new Project(
       "solo-projects",
+      "Matt's Weather App",
+      "A Weather App that gives the user a forecast based on zipcode",
+      "https://matt-rogers-weather-app.herokuapp.com/hello",
+      "https://github.com/MattRoger/WeatherForecast",
+      "https://github.com/MattRoger/WeatherForecast/blob/master/README.md",
+      "assets/img/portfolio/weatherforecast.PNG",
+      ["PugJs","Express","NodeJs","Bootstrap","JavaScript", "jQuery", "CSS", "HTML"]
+    ),
+    new Project(
+      "solo-projects",
       "Pokemon Fire, Grass, Water",
       "A Take on Rock, Paper, Scissors. Featuring Pokemon.",
       "https://mattroger.github.io/pokemonRPS/",
@@ -72,7 +82,7 @@ const load_solo_projects = () => {
       "https://github.com/MattRoger/Liri/blob/master/README.md",
       "https://github.com/MattRoger/Liri/blob/master/README.md",
       "assets/img/portfolio/liri.PNG",
-      ["JavaScript", "Node.js", "APIs"]
+      ["JavaScript", "NodeJs", "APIs"]
     ),
     new Project(
       "solo-projects",
@@ -88,9 +98,9 @@ const load_solo_projects = () => {
       "solo-projects",
       "Kalaxian Crystals",
       "Reach a randomly generated target value by using four crystals with random values.",
-      "https://mattroger.github.io/crystalGuessGame/",
+      "https://mattroger.github.io/kalaxianKrystalsV2/",
       "https://github.com/MattRoger/crystalGuessGame",
-      "https://github.com/MattRoger/crystalGuessGame",
+      "https://github.com/MattRoger/kalaxianKrystalsV2/blob/master/README.md",
       "assets/img/portfolio/crystalgame.png",
       ["JavaScript", "jQuery", "CSS", "HTML"]
     ),

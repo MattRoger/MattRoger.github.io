@@ -36,7 +36,7 @@ jQuery
 ## Installation
 * :trident: Fork it
 * :sheep: Clone it
-* Install NPMs
+* Install Dependencies
   * [Emailjs](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/)
   ````
   $ npm install emailjs-com --save
@@ -49,7 +49,7 @@ jQuery
 
 ## Credits / Contact information
 * @MattRoger 
-  * :man_office_worker: https://mattroger.github.io/
+  * :octocat: [Github](https://mattroger.github.io)
   * :e-mail: mattroger.webdev@gmail.com
   * :man_office_worker: www.linkedin.com/in/matt-roger/
 
