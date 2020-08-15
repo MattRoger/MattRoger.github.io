@@ -11,7 +11,7 @@ const load_solo_projects = () => {
       "https://matt-rogers-weather-app.herokuapp.com/hello",
       "https://github.com/MattRoger/WeatherForecast/blob/master/README.md",
       "https://github.com/MattRoger/WeatherForecast",
-      "assets/img/portfolio/weatherforecast.PNG",
+      "assets/img/portfolio/weatherforecast.png",
       [
         "PugJs",
         "Express",
