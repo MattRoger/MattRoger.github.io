@@ -9,9 +9,9 @@ $(document).ready(function() {
 
 
 // about text
-const aboutTextP1 = '  A University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.'
+const aboutTextP1 = '  A full stack developer with a passion for frontend. I am a University of Denver full-stack coding Bootcamp graduate, with a Bachelors in Fine arts looking for a place to grow his skills. I love that coding feeds my creative side and the need for a challenge.'
 const aboutTextP2 = 'I am currently the lab/social media manager at Denver Pro Photo. My responsibilities include, providing high-quality lab services, managing the store’s website, and fostering business by creating sales and mass email campaigns to bring customers into the store.'
-const aboutTextP3 = 'Creating graphics and layouts for promotions really helped add clarity and flair to my front-end developing skills. Now, in Photoshop, instead of editing photos, I spend most of my time creating web page layouts. There I can easily adjust colors and element placement to create dazzling styling and coherent framework.' 
+const aboutTextP3 = 'As the lab/social media manager at Denver Pro Photo. My responsibilities include, providing high-quality lab services, managing the store’s website, and fostering business by creating sales and mass email campaigns to bring customers into the store' 
 const aboutTextP4 = 'As I transition from my career in photography into a career in coding, I am looking for a company that will help me grow my skills as a web developer, but that will also value my past experience in the art world.'
 const linkedIn='https://www.linkedin.com/in/matt-roger/'
 const github='https://github.com/MattRoger'
