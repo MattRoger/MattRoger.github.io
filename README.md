@@ -12,7 +12,7 @@ Because I needed a portfolio that stands out! :cowboy_hat_face:
 
 Complete
 
-future development.
+### future development.
 - [ ] Sort portfolio by category
 
 

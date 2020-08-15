@@ -73,7 +73,7 @@ const load_skills = () => {
 const load_creative_process = ()=>{
 const div = $("<div>").addClass("creative-process about-wrapper");
 const creative_opening =$("<p>").text(
-     'I strive for clean and organized code so I can work more effectively. I thrive in front-end positions, There I can use my coding skills and my visual arts background and create a unique and memorable user experiences.');
+    "I strive for clean and organized code so I can work more effectively. I thrive in front-end positions, There I can use my coding skills and my visual arts background and create a unique and memorable user experiences.");
 const list_items=[
     "Determine the goals of the project",
     "Pseudocode plan out the projects functionality",

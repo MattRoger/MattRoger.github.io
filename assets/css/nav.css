@@ -9,6 +9,9 @@
   text-align: center;
   cursor: pointer;
 }
+.section-nav a{
+  text-decoration: none;
+}
 .section-nav p {
   font-family: "Didact Gothic", sans-serif;
   padding: 0 2rem;
