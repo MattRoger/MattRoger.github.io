@@ -43,7 +43,7 @@ const frameworks=["Bootstrap","Reactstrap", "Express"];
 const libraries=["jQuery", "React"];
 const databases =["MySQL","Sequelize","MongoDB","Mongoose","Firebase"];
 // const compilers=["Pug.js"];
-const webdev=["Node.js", "Pug.js","Styled-Components","NPMs","Responsive Web Design", "Angular", "Adobe Photoshop"];
+const webdev=["Github", "Node.js", "Pug.js","Styled-Components","NPMs","Responsive Web Design", "Angular", "Adobe Photoshop"];
 const other_skills=["Photography"," Mass Email Marketing","Social Media Marketing", "Adobe Lightroom", "Team Leadership" ,"Trello Boards", "Time Management"];
 
 const make_list = (heading, section) =>{
