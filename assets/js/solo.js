@@ -6,6 +6,21 @@ const load_solo_projects = () => {
   const catalog = [
     new Project(
       "solo-projects",
+      "Arrowverse Guide",
+      "A card based character guide to the arrow universe",
+      "https://pacific-plains-33480.herokuapp.com/index.php",
+      "https://github.com/MattRoger/arrowverse-character-guide/blob/master/README.md",
+      "https://github.com/MattRoger/arrowverse-character-guide",
+      "assets/img/portfolio/arrowverse.png",
+      [
+        "PHP",
+        "MySQL",
+        "CSS",
+        "HTML",
+      ]
+    ),
+    new Project(
+      "solo-projects",
       "Matt's Weather App",
       "A Weather App that gives the user a forecast based on zipcode",
       "https://matt-rogers-weather-app.herokuapp.com/hello",

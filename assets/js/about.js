@@ -37,7 +37,7 @@ const create_about_me=()=>{
 
 // create tech skills
 
-const languages=["HTML", "CSS", "JavaScript", "PHP", "Sql", "TypeScript"];
+const languages=["HTML", "CSS", "JavaScript", "PHP", "SQL", "TypeScript"];
 const frameworks=["Bootstrap","Reactstrap", "Express"];
 // const environments=["Node.js"];
 const libraries=["jQuery", "React"];

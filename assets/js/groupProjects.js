@@ -23,7 +23,7 @@ const load_group_projects = () => {
             "https://github.com/MattRoger/Spoiler-Alert/blob/master/README.md",
             "https://www.reddit.com/",
             "assets/img/portfolio/spoileralert.PNG",
-            ["Pug.js", "JavaScript",  "jQuery", "Express", "Passport", "MySql"]
+            ["Pug.js", "JavaScript",  "jQuery", "Express", "Passport", "MySQL"]
         ),     
         new Project(
             "group-projects",
