@@ -48,7 +48,7 @@ class Project {
         const list =$("<ul>");
         for(let i=0;this.tech.length >i; i++){
             const li =$("<li>").text(this.tech[i]);            list.append(li);
-        }
+        }0
         tech_list.append(p, list);
 
         const links_div=$("<div>").addClass("project-links");
