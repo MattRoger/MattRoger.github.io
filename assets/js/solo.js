@@ -6,6 +6,21 @@ const load_solo_projects = () => {
   const catalog = [
     new Project(
       "solo-projects",
+      "Risk Game Tracker",
+      "A React app to track the progress of a game of Risk",
+      "https://agile-anchorage-45074.herokuapp.com/",
+      "https://github.com/MattRoger/risk_game_tracker/blob/master/README.md",
+      "https://github.com/MattRoger/risk_game_tracker",
+      "assets/img/portfolio/risk.png",
+      [
+        "React",
+        "Styled-Components",
+        "SCSS",
+        "HTML"
+      ]
+    ),
+    new Project(
+      "solo-projects",
       "Arrowverse Guide",
       "A card based character guide to the arrow universe",
       "https://pacific-plains-33480.herokuapp.com/index.php",
@@ -128,16 +143,16 @@ const load_solo_projects = () => {
       "assets/img/portfolio/crystalgame.png",
       ["JavaScript", "jQuery", "CSS", "HTML"]
     ),
-    new Project(
-      "solo-projects",
-      "Psychic Game",
-      "A game where the computer generates a random letter for the player to guess.",
-      "https://mattroger.github.io/psychic-game/",
-      "https://github.com/MattRoger/psychic-game/blob/master/README.md",
-      "https://github.com/MattRoger/psychic-game",
-      "assets/img/portfolio/psychicGame.PNG",
-      ["JavaScript", "CSS", "HTML"]
-    ),
+    // new Project(
+    //   "solo-projects",
+    //   "Psychic Game",
+    //   "A game where the computer generates a random letter for the player to guess.",
+    //   "https://mattroger.github.io/psychic-game/",
+    //   "https://github.com/MattRoger/psychic-game/blob/master/README.md",
+    //   "https://github.com/MattRoger/psychic-game",
+    //   "assets/img/portfolio/psychicGame.PNG",
+    //   ["JavaScript", "CSS", "HTML"]
+    // ),
   ];
 
   for (let i = 0; i < catalog.length; i++) {
