@@ -8,7 +8,7 @@ const load_solo_projects = () => {
       "solo-projects",
       "Risk Game Tracker",
       "A React app to track the progress of a game of Risk",
-      "https://agile-anchorage-45074.herokuapp.com/",
+      "https://risk-game-tracker.herokuapp.com/",
       "https://github.com/MattRoger/risk_game_tracker/blob/master/README.md",
       "https://github.com/MattRoger/risk_game_tracker",
       "assets/img/portfolio/risk.png",
