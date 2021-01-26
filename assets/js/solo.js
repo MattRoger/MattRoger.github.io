@@ -70,7 +70,7 @@ const load_solo_projects = () => {
       "https://mattroger.github.io/shoppingList/",
       "https://github.com/MattRoger/shoppingList/blob/main/README.md",
       "https://github.com/MattRoger/shoppingList",
-      "assets/img/portfolio/shoppinglist.png",
+      "assets/img/portfolio/shoppinglist.PNG",
       ["JavaScript", "CSS", "HTML"]
     ),
     new Project(
