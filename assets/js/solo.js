@@ -6,18 +6,23 @@ const load_solo_projects = () => {
   const catalog = [
     new Project(
       "solo-projects",
+      "Pizza Shop",
+      "A vanilla JavaScript website for a pizzeria",
+      "https://mattroger.github.io/pizzaShop/",
+      "https://github.com/MattRoger/pizzaShop/blob/main/README.md",
+      "https://github.com/MattRoger/pizzaShop",
+      "assets/img/portfolio/pizzaShop.jpg",
+      ["JavaScript", "CSS", "HTML"]
+    ),
+    new Project(
+      "solo-projects",
       "Risk Game Tracker",
       "A React app to track the progress of a game of Risk",
       "https://risk-game-tracker.herokuapp.com/",
       "https://github.com/MattRoger/risk_game_tracker/blob/master/README.md",
       "https://github.com/MattRoger/risk_game_tracker",
       "assets/img/portfolio/risk.png",
-      [
-        "React",
-        "Styled-Components",
-        "SCSS",
-        "HTML"
-      ]
+      ["React", "Styled-Components", "SCSS", "HTML"]
     ),
     new Project(
       "solo-projects",
@@ -27,12 +32,7 @@ const load_solo_projects = () => {
       "https://github.com/MattRoger/arrowverse-character-guide/blob/master/README.md",
       "https://github.com/MattRoger/arrowverse-character-guide",
       "assets/img/portfolio/arrowverse.png",
-      [
-        "PHP",
-        "MySQL",
-        "CSS",
-        "HTML",
-      ]
+      ["PHP", "MySQL", "CSS", "HTML"]
     ),
     new Project(
       "solo-projects",
@@ -62,6 +62,16 @@ const load_solo_projects = () => {
       "https://github.com/MattRoger/pokemonrps",
       "assets/img/portfolio/pokemonFGW.PNG",
       ["JavaScript", "jQuery", "CSS", "HTML"]
+    ),
+    new Project(
+      "solo-projects",
+      "Shopping List",
+      "A JavaScript based Shopping list.",
+      "https://mattroger.github.io/shoppingList/",
+      "https://github.com/MattRoger/shoppingList/blob/main/README.md",
+      "https://github.com/MattRoger/shoppingList",
+      "assets/img/portfolio/shoppinglist.png",
+      ["JavaScript", "CSS", "HTML"]
     ),
     new Project(
       "solo-projects",
